@@ -1,27 +1,28 @@
-# HITL Commerce UI
+# Hunnu Store Front-End Prototype
 
-This repository contains a static prototype for the HITL (Human-In-The-Loop) e-commerce experience. The goal is to provide a high-fidelity front-end mockup that demonstrates the core UX flows for assisted shopping, curated collections, and AI-guided support.
+This repository contains the bilingual, responsive front-end prototype for the Hunnu Store e-commerce experience. It showcases the landing page, localization tooling, and interactive merchandising modules that pair modern technology with Mongolian cultural motifs.
 
 ## Getting started
 
-Open `index.html` in your browser or serve the project locally with any static file server. For example:
+You can open `index.html` directly in a browser, or launch the lightweight development server that is bundled with the project:
 
 ```bash
-python -m http.server 8080
+npm start
 ```
 
-Then browse to `http://localhost:8080`.
+By default the site will be served at [http://localhost:4173](http://localhost:4173). Set the `PORT` environment variable to expose a different port when needed.
 
 ## Project structure
 
-- `index.html` – landing page markup for the HITL experience.
-- `styles.css` – visual design tokens and responsive layout styles.
-- `script.js` – lightweight interactions such as product filtering and scroll effects.
-- `assets/` – SVG textures used for backgrounds.
+- `index.html` – landing page markup, data attributes for localization, and component layout.
+- `styles.css` – design tokens, responsive grid system, and component styling.
+- `script.js` – localization engine, carousel logic, and interactive behaviors.
+- `serve.js` – zero-dependency static file server used by `npm start`.
+- `assets/` – brand imagery such as the flame-and-circuit logomark.
 
 ## Customizing
 
-Update the product catalogue in `index.html` by editing the `data-category` attributes and associated card content. Colors, typography, and spacing can be tuned via CSS variables defined at the top of `styles.css`.
+Translate copy by updating the dictionaries inside `script.js`. Visual adjustments (colors, typography, spacing) can be applied through the CSS custom properties at the top of `styles.css`.
 
 ## License
 

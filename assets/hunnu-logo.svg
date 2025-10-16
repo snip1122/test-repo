@@ -1,0 +1,26 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hunnu Store flame and circuit logo">
+  <defs>
+    <linearGradient id="flame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB36D" />
+      <stop offset="100%" stop-color="#FF8C42" />
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path
+      d="M80 16c-9.4 9.5-16.7 21.5-16.7 34.6c0 9.8 5 18.6 12.6 24.5c-5.3-14 5.1-28.7 17.3-33.9c-3.6 7-4.7 14.3-2.4 21.7c2.1 7.2 6.9 13.7 14.1 18.5c6.7 4.4 10.7 11.5 10.7 19.3c0 15.4-14 27.8-35.6 27.8c-21 0-37.8-14.4-37.8-32.2c0-11.4 6.8-21.4 16.9-27.7c-10.3-8-17.6-18.9-17.6-31.9C41.5 31.4 58 16 80 16Z"
+      fill="url(#flame)"
+    />
+    <g stroke="#1B365D" stroke-width="8" stroke-linecap="round">
+      <path d="M80 124v20" />
+      <path d="M58 128v16" />
+      <path d="M102 128v16" />
+    </g>
+    <g fill="#1B365D">
+      <circle cx="80" cy="148" r="8" />
+      <circle cx="58" cy="148" r="8" />
+      <circle cx="102" cy="148" r="8" />
+      <rect x="50" y="112" width="60" height="12" rx="6" />
+      <rect x="36" y="100" width="88" height="12" rx="6" />
+    </g>
+  </g>
+</svg>

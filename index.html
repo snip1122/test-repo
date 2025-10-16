@@ -1,377 +1,568 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HITL Commerce – Assisted Shopping for Humans + AI</title>
+    <title data-i18n="meta.title">Hunnu Store – Монголын технологийн шинэ үе</title>
     <meta
       name="description"
-      content="Experience HITL Commerce – a human-in-the-loop marketplace that blends AI curation with expert stylists to deliver products you actually love."
+      data-i18n-content="meta.description"
+      content="Hunnu Store-оор дамжуулан Монголын хэрэглэгчдэд зориулсан дээд зэрэглэлийн электроник, найдвартай баталгаат үйлчилгээ, соёлын онцлогтой үйлчилгээг мэдрээрэй."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to main content</a>
+    <a class="skip-link" href="#main" data-i18n="skip">Үндсэн хэсэг рүү алгасах</a>
     <div class="page">
+      <div class="top-bar">
+        <div class="top-bar__inner">
+          <div class="top-bar__meta">
+            <span data-i18n="topBar.location">📍 Улаанбаатар хотын төв</span>
+            <a href="tel:+97677112233" data-i18n="topBar.phone">☎ +976 77 11 22 33</a>
+            <span data-i18n="topBar.hours">Даваа–Бямба: 09:00–21:00</span>
+          </div>
+          <div class="top-bar__links">
+            <a
+              href="#store-locator"
+              aria-label="Дэлгүүрийн байршил"
+              data-i18n="topBar.storeLocator"
+              data-i18n-aria-label="topBar.storeLocator"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2a7 7 0 0 0-7 7c0 4.1 3.8 8.7 6 11 1 .9 1.3.9 2.2 0 2.2-2.3 6-6.9 6-11a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5Z"
+                />
+              </svg>
+              Дэлгүүрийн байршил
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+            <div class="language-switcher" role="group" aria-label="Хэл сонгох" data-i18n-aria-label="languageSwitcher.aria">
+              <button type="button" class="language-switcher__button is-active" data-language="mn">MN</button>
+              <button type="button" class="language-switcher__button" data-language="en">EN</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <header class="site-header" data-scroll-header>
-        <div class="logo">HITL</div>
-        <nav aria-label="Primary navigation" class="site-nav">
-          <a href="#collections">Collections</a>
-          <a href="#assist">Assist</a>
-          <a href="#stories">Stories</a>
-          <a href="#about">About</a>
-        </nav>
-        <div class="header-actions">
-          <button class="btn btn-ghost">Log in</button>
-          <button class="btn btn-primary">Request beta access</button>
+        <div class="site-header__inner">
+          <a class="brand" href="#home">
+            <span class="brand__mark">
+              <img src="assets/hunnu-logo.svg" alt="Hunnu Store" />
+            </span>
+            <span class="brand__name">Hunnu Store</span>
+          </a>
+          <form class="search" role="search" aria-label="Сайтын хайлт" data-i18n-aria-label="search.aria">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M10.5 3a7.5 7.5 0 1 1-5.3 12.8l-2.7 2.7a1 1 0 0 1-1.5-1.4l2.7-2.7A7.5 7.5 0 0 1 10.5 3Zm0 2a5.5 5.5 0 1 0 0 11a5.5 5.5 0 0 0 0-11Z"
+              />
+            </svg>
+            <input
+              type="search"
+              name="query"
+              placeholder="Гар утас, зөөврийн компьютер, смарт гэр..."
+              data-i18n-placeholder="search.placeholder"
+            />
+          </form>
+          <div class="header-actions">
+            <button class="icon-button" aria-label="Хүслийн жагсаалт" data-i18n-aria-label="header.wishlist">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 20.7c-.4 0-.7-.2-1-.4C7 16.9 4 13.9 4 10.4C4 7.4 6.3 5 9.2 5c1.2 0 2.4.5 3.2 1.4c.8-.9 2-1.4 3.2-1.4C17.7 5 20 7.4 20 10.4c0 3.5-3 6.5-7 9.9c-.3.2-.6.4-1 .4Z"
+                />
+              </svg>
+            </button>
+            <button class="icon-button" aria-label="Харьцуулах бүтээгдэхүүн" data-i18n-aria-label="header.compare">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 4h3v16H5zm5 5h3v11h-3zm5-3h3v14h-3z" />
+              </svg>
+            </button>
+            <button class="icon-button" aria-label="Хэрэглэгчийн бүртгэл" data-i18n-aria-label="header.account">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 3a4 4 0 1 1 0 8a4 4 0 0 1 0-8Zm0 10c3.9 0 7 2.2 7 4.9c0 .6-.4 1.1-1 1.1H6c-.6 0-1-.5-1-1.1c0-2.7 3.1-4.9 7-4.9Z"
+                />
+              </svg>
+            </button>
+            <button class="icon-button" aria-label="Сагс" data-i18n-aria-label="header.cart">
+              <span aria-hidden="true">2</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.2 5l-.5-2H3a1 1 0 1 0 0 2h1.2l1.8 8.4A2 2 0 0 0 7.9 15H18a1 1 0 1 0 0-2H8l-.2-1h9.9a2 2 0 0 0 2-1.6L21 6H6.2ZM8 18a2 2 0 1 0 0 4a2 2 0 0 0 0-4Zm9 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4Z"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </header>
 
+      <nav class="primary-nav" aria-label="Үндсэн цэс" data-i18n-aria-label="nav.aria">
+        <div class="primary-nav__inner">
+          <div class="primary-nav__menu">
+            <a href="#phones" data-i18n="nav.phones">Гар утас</a>
+            <a href="#laptops" data-i18n="nav.laptops">Зөөврийн &amp; Таблет</a>
+            <a href="#audio" data-i18n="nav.audio">Аудио</a>
+            <a href="#smart-home" data-i18n="nav.smartHome">Смарт гэр</a>
+            <a href="#accessories" data-i18n="nav.accessories">Дагалдах хэрэгсэл</a>
+            <a href="#stories" data-i18n="nav.stories">Түүх &amp; нийтлэл</a>
+          </div>
+          <a class="primary-nav__promo" href="#loyalty" data-i18n="nav.promo">
+            Нээлтийн долоо хоногт 3 дахин урамшуулал авцагаая ⚡
+          </a>
+        </div>
+      </nav>
+
       <main id="main">
         <section class="hero" id="home">
-          <div class="hero__content">
-            <p class="eyebrow">Human in the loop commerce</p>
-            <h1>Retail therapy meets real humans, guided by adaptive AI.</h1>
-            <p class="lede">
-              HITL pairs neural recommendations with curated human edits so every cart feels intentional.
-              Discover pieces chosen for your taste, your ethics, and your lifestyle in minutes.
-            </p>
-            <div class="hero__actions">
-              <button class="btn btn-primary">Shop curated drops</button>
-              <button class="btn btn-secondary">See how it works</button>
+          <div class="hero__inner">
+            <div class="hero__copy">
+              <span class="tag" data-i18n="hero.tag">Уламжлал ба инновацийн огтлолцол</span>
+              <h1 data-i18n="hero.heading">Монголын шинэ үеийн манлайлагчдад зориулагдсан дээд зэрэглэлийн электроник.</h1>
+              <p data-i18n="hero.body">
+                Hunnu Store нь дэлхийд танигдсан брэндүүдийг монгол үйлчилгээ, баталгаа, төлбөрийн уян хатан нөхцөлтэй
+                хослуулан хүргэдэг. Онлайн болон дэлгүүрээр итгэлтэй худалдан аваарай, бүгдийг Cody платформоор
+                ажиллуулж байна.
+              </p>
+              <div class="hero__actions">
+                <a class="btn btn-primary" href="#featured" data-i18n="hero.ctaPrimary">Шинэ бүтээгдэхүүнтэй танилцах</a>
+                <a class="btn btn-secondary" href="#value" data-i18n="hero.ctaSecondary">Hunnu амлалтыг мэдрээрэй</a>
+              </div>
+              <dl class="metrics">
+                <div class="metric">
+                  <dt data-i18n="hero.metrics.rating.label">4.9★</dt>
+                  <dd data-i18n="hero.metrics.rating.value">8 мянган хэрэглэгчийн дундаж үнэлгээ</dd>
+                </div>
+                <div class="metric">
+                  <dt data-i18n="hero.metrics.delivery.label">48ц</dt>
+                  <dd data-i18n="hero.metrics.delivery.value">Улаанбаатар дотор яаралтай хүргэлт</dd>
+                </div>
+                <div class="metric">
+                  <dt data-i18n="hero.metrics.support.label">24/7</dt>
+                  <dd data-i18n="hero.metrics.support.value">Хүний + хиймэл оюуны холимог дэмжлэг</dd>
+                </div>
+              </dl>
             </div>
-            <dl class="hero__metrics">
-              <div>
-                <dt>82%</dt>
-                <dd>of shoppers say our stylists made discovery effortless.</dd>
+            <div class="hero-carousel" data-hero>
+              <div class="hero-carousel__slides">
+                <article
+                  class="hero-slide"
+                  style="background-image: url('https://images.unsplash.com/photo-1545239351-ef35f43d514b?auto=format&fit=crop&w=1200&q=80');"
+                >
+                  <div class="hero-slide__content">
+                    <h3 data-i18n="hero.slides.0.heading">Hunnu Care+ багцтай флагман утаснууд</h3>
+                    <p data-i18n="hero.slides.0.body">
+                      Дэлгэцийн даатгал, хуучин утсаа сэлгэх баталгаа, монгол хэлтэй мэргэжилтний сургалтыг хамтад нь аваарай.
+                    </p>
+                    <a class="btn btn-primary" href="#phones" data-i18n="hero.slides.0.cta">Гар утсыг үзэх</a>
+                  </div>
+                </article>
+                <article
+                  class="hero-slide"
+                  style="background-image: url('https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80');"
+                >
+                  <div class="hero-slide__content">
+                    <h3 data-i18n="hero.slides.1.heading">Гэрийн дулааны уламжлалаас сэдэвлэсэн смарт шийдлүүд</h3>
+                    <p data-i18n="hero.slides.1.body">
+                      Халаалт, гэрэлтүүлэг, аюулгүй байдлаа автоматжуулж, монгол айлын халуун дотно уур амьсгалыг хадгалъя.
+                    </p>
+                    <a class="btn btn-primary" href="#smart-home" data-i18n="hero.slides.1.cta">Гэрээ шинэчилье</a>
+                  </div>
+                </article>
               </div>
-              <div>
-                <dt>12m</dt>
-                <dd>data points interpreted with a human touch every day.</dd>
+              <div class="hero-carousel__nav">
+                <button class="hero-arrow" data-hero-prev aria-label="Өмнөх слайд" data-i18n-aria-label="hero.carousel.prev">❮</button>
+                <div class="hero-dots" role="tablist"></div>
+                <button class="hero-arrow" data-hero-next aria-label="Дараагийн слайд" data-i18n-aria-label="hero.carousel.next">❯</button>
               </div>
-              <div>
-                <dt>4.9★</dt>
-                <dd>average satisfaction across 40k verified beta sessions.</dd>
-              </div>
-            </dl>
-          </div>
-          <div class="hero__visual" aria-hidden="true">
-            <div class="hero-card hero-card--primary">
-              <span class="hero-card__eyebrow">Live human assist</span>
-              <p class="hero-card__title">A stylist named Mira is co-editing your cart.</p>
-              <div class="hero-card__avatars">
-                <span class="avatar avatar--ai" title="AI agent"></span>
-                <span class="avatar avatar--human" title="Mira, stylist"></span>
-              </div>
-              <p class="hero-card__meta">Response in under 2 minutes.</p>
-            </div>
-            <div class="hero-card hero-card--secondary">
-              <p class="hero-card__title">Adaptive ethics filter</p>
-              <p class="hero-card__meta">Vegan, local, circular supply chain prioritized.</p>
-              <div class="pill-rail">
-                <span class="pill">Regenerative cotton</span>
-                <span class="pill">Fair trade</span>
-                <span class="pill">Zero plastic</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="product-experience" id="collections">
-          <div class="section-heading">
-            <p class="eyebrow">Curated for every intention</p>
-            <h2>Stay in flow with adaptive collections.</h2>
-            <p class="section-heading__desc">
-              Move between AI-curated suggestions and human edits with one tap. Filter by vibe, intent, or expert team.
-            </p>
-          </div>
-          <div class="product-toolbar" role="toolbar" aria-label="Filter catalog">
-            <div class="chip-group" data-filter-group>
-              <button class="chip is-active" data-filter="all">All</button>
-              <button class="chip" data-filter="new">New rituals</button>
-              <button class="chip" data-filter="ethics">Ethical core</button>
-              <button class="chip" data-filter="tech">HITL tech picks</button>
-              <button class="chip" data-filter="wellness">Wellness</button>
-            </div>
-            <div class="assist-toggle">
-              <label class="switch">
-                <input type="checkbox" id="assist-switch" checked />
-                <span class="slider" aria-hidden="true"></span>
-              </label>
-              <label for="assist-switch">Show human edits</label>
-            </div>
-          </div>
-
-          <div class="product-grid" data-product-grid>
-            <article class="product-card" data-category="new ethics">
-              <div class="product-card__media gradient gradient--sunrise"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">Curated by Mira</p>
-                <h3>Atmos linen wrap dress</h3>
-                <p class="product-card__desc">Made-to-order pieces sewn in Lisbon with remnant linen.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$168</span>
-                  <button class="btn-icon" aria-label="Add Atmos linen wrap dress to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="tech new">
-              <div class="product-card__media gradient gradient--violet"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">AI suggested</p>
-                <h3>Neural-knit adaptive jacket</h3>
-                <p class="product-card__desc">Temperature-responsive fibers mapped to your routine.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$248</span>
-                  <button class="btn-icon" aria-label="Add Neural-knit adaptive jacket to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="ethics wellness">
-              <div class="product-card__media gradient gradient--emerald"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">Curated by Ravi</p>
-                <h3>Hearth cold brew ritual kit</h3>
-                <p class="product-card__desc">Small-batch adaptogenic blend with reusable glass brewing system.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$64</span>
-                  <button class="btn-icon" aria-label="Add Hearth cold brew ritual kit to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="tech">
-              <div class="product-card__media gradient gradient--slate"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">AI suggested</p>
-                <h3>Continuum mixed reality frames</h3>
-                <p class="product-card__desc">Transition from meetings to streetwear with contextual overlays.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$398</span>
-                  <button class="btn-icon" aria-label="Add Continuum mixed reality frames to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="wellness ethics">
-              <div class="product-card__media gradient gradient--peach"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">Curated by Amaya</p>
-                <h3>Cloudhouse mindful mat</h3>
-                <p class="product-card__desc">Hand-loomed support with biometric posture cues from our AI.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$112</span>
-                  <button class="btn-icon" aria-label="Add Cloudhouse mindful mat to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="new">
-              <div class="product-card__media gradient gradient--aqua"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">AI suggested</p>
-                <h3>Pulse 03 sneakers</h3>
-                <p class="product-card__desc">Self-healing knit and swap-in soles produced on-demand.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$210</span>
-                  <button class="btn-icon" aria-label="Add Pulse 03 sneakers to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="ethics">
-              <div class="product-card__media gradient gradient--amber"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">Curated by Kai</p>
-                <h3>Solaris daylight lamp</h3>
-                <p class="product-card__desc">Solar-powered wellness lamp with recycled glass diffuser.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$186</span>
-                  <button class="btn-icon" aria-label="Add Solaris daylight lamp to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="wellness tech">
-              <div class="product-card__media gradient gradient--berry"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">AI + Mira</p>
-                <h3>Align sonic diffuser</h3>
-                <p class="product-card__desc">AI-personalized scent journeys with human-crafted rituals.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$132</span>
-                  <button class="btn-icon" aria-label="Add Align sonic diffuser to bag">❤</button>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="assist" id="assist">
-          <div class="assist__content">
-            <div class="section-heading">
-              <p class="eyebrow">Always a human on the other side</p>
-              <h2>AI handles the heavy lift. Humans craft the story.</h2>
-            </div>
-            <ul class="assist__list">
-              <li>
-                <h3>Context-rich onboarding</h3>
-                <p>
-                  Start with a 90-second voice note or mood board upload. Our AI translates it into actionable briefs for stylists
-                  who refine the picks.
-                </p>
-              </li>
-              <li>
-                <h3>Ethics that stay honest</h3>
-                <p>
-                  Every recommendation is co-signed by vetted experts who uphold HITL standards for supply chain transparency,
-                  inclusivity, and long-term durability.
-                </p>
-              </li>
-              <li>
-                <h3>Adaptive concierge</h3>
-                <p>
-                  Your concierge tracks changes in schedule or climate, nudging AI models to refresh selections before you even
-                  realize you need them.
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="assist__panel" role="presentation">
-            <div class="chat-card">
-              <div class="chat-card__header">
-                <div class="chat-card__status">
-                  <span class="status-dot"></span>
-                  <span>Live human assist</span>
-                </div>
-                <span class="chat-card__time">1m avg wait</span>
-              </div>
-              <div class="chat-card__thread">
-                <div class="chat-card__message chat-card__message--ai">
-                  <p>These jackets pair with your upcoming retreat climate and color palette.</p>
-                </div>
-                <div class="chat-card__message chat-card__message--human">
-                  <p>
-                    I swapped look 2 for a lighter layer from Atelier M. Ethically dyed, perfect with the Atmos wrap dress you
-                    loved.
-                  </p>
-                </div>
-                <div class="chat-card__message chat-card__message--user">
-                  <p>Perfect. Can we add matching accessories under $120?</p>
-                </div>
-              </div>
-              <form class="chat-card__composer">
-                <label for="chat-input" class="sr-only">Send a message</label>
-                <input id="chat-input" type="text" placeholder="Ask for tweaks, swaps, or new vibes..." />
-                <button type="submit" class="btn btn-primary">Send</button>
-              </form>
             </div>
           </div>
         </section>
 
-        <section class="stories" id="stories">
-          <div class="section-heading">
-            <p class="eyebrow">Signals from the loop</p>
-            <h2>Insights your team can act on in real time.</h2>
-            <p class="section-heading__desc">
-              Align merchandising, CX, and supply teams with dashboards synthesizing both AI predictions and human annotations.
+        <section class="section" id="categories">
+          <div class="section__intro">
+            <span class="eyebrow" data-i18n="categories.eyebrow">Ангиллаар хайх</span>
+            <h2 data-i18n="categories.heading">Монголчуудын амьдралын бүх хэсэгт тохирсон технологи.</h2>
+            <p data-i18n="categories.body">
+              Нүүдэлчин аялал, хотын бүтээмж гээд бидний шалгаруулсан ангилал бүр нь нутгийн нөхцөлд туршигдсан
+              бүтээгдэхүүнийг онцолдог.
             </p>
           </div>
-          <div class="stories__grid">
-            <article class="story-card">
-              <h3>Stylist annotations</h3>
-              <p>
-                Discover how Mira, Kai, and other stylists tag emergent needs, letting AI shift recommendations from seasonal to
-                situational.
-              </p>
-              <a class="link-arrow" href="#">Read the playbook</a>
+          <div class="category-grid">
+            <a class="category-card" id="phones" href="#featured">
+              <img
+                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80"
+                alt="Гар утас"
+                data-i18n-alt="categories.cards.phones.alt"
+              />
+              <div class="category-card__label">
+                <h3 data-i18n="categories.cards.phones.title">Гар утас</h3>
+                <span data-i18n="categories.cards.phones.subtitle">5G бэлэн · Монгол интерфэйс</span>
+              </div>
+            </a>
+            <a class="category-card" id="laptops" href="#featured">
+              <img
+                src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80"
+                alt="Зөөврийн компьютер"
+                data-i18n-alt="categories.cards.laptops.alt"
+              />
+              <div class="category-card__label">
+                <h3 data-i18n="categories.cards.laptops.title">Зөөврийн &amp; Таблет</h3>
+                <span data-i18n="categories.cards.laptops.subtitle">Бүтээлч хүчин чадал · Дотоодын баталгаа</span>
+              </div>
+            </a>
+            <a class="category-card" id="audio" href="#featured">
+              <img
+                src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=900&q=80"
+                alt="Аудио"
+                data-i18n-alt="categories.cards.audio.alt"
+              />
+              <div class="category-card__label">
+                <h3 data-i18n="categories.cards.audio.title">Аудио</h3>
+                <span data-i18n="categories.cards.audio.subtitle">Тоглолтын тунгалаг дуу · Аялалд бэлэн</span>
+              </div>
+            </a>
+            <a class="category-card" id="smart-home" href="#featured">
+              <img
+                src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=80"
+                alt="Смарт гэр"
+                data-i18n-alt="categories.cards.smartHome.alt"
+              />
+              <div class="category-card__label">
+                <h3 data-i18n="categories.cards.smartHome.title">Смарт гэр</h3>
+                <span data-i18n="categories.cards.smartHome.subtitle">Аюулгүй байдал · Тайтгаруулалт · Хэмнэлт</span>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="section featured" id="featured">
+          <div class="section__intro">
+            <span class="eyebrow" data-i18n="featured.eyebrow">Энэ долоо хоногийн онцлох</span>
+            <h2 data-i18n="featured.heading">Hunnu давуу талтай шинэчлэлийг онцолж байна.</h2>
+            <p data-i18n="featured.body">
+              Онцлох бүтээгдэхүүн бүр дээр монгол хэлтэй тохиргоо, хоёр хэлний дэмжлэг, Cody платформд суурилсан сунгасан
+              баталгааг дагалдуулдаг.
+            </p>
+          </div>
+          <div class="featured__wrapper">
+            <div class="product-carousel" data-carousel>
+              <button
+                class="carousel-control carousel-control--prev"
+                aria-label="Бүтээгдэхүүнийг гүйлгэх"
+                data-carousel-prev
+                data-i18n-aria-label="carousel.prev"
+              >
+                ❮
+              </button>
+              <div class="product-track">
+                <article class="product-card">
+                  <span class="product-card__badge" data-i18n="featured.products.0.badge">Шинэ</span>
+                  <img
+                    src="https://images.unsplash.com/photo-1510554310709-f60c2c65586a?auto=format&fit=crop&w=900&q=80"
+                    alt="Galaxy S флагман"
+                    data-i18n-alt="featured.products.0.alt"
+                  />
+                  <div class="product-card__body">
+                    <h3 data-i18n="featured.products.0.title">Galaxy S Ultra Hunnu Edition</h3>
+                    <p data-i18n="featured.products.0.body">
+                      Монголын байгальд зориулагдсан камер, 2 жилийн Hunnu Care+ хамгаалалттай хамт.
+                    </p>
+                    <div class="product-card__meta">
+                      <span class="product-card__price">₮3,899,000</span>
+                      <div class="product-card__actions">
+                        <button
+                          class="icon-button"
+                          aria-label="Galaxy S Ultra-г хүслийн жагсаалтад нэмэх"
+                          data-i18n-aria-label="featured.products.0.wishlist"
+                        >
+                          ❤
+                        </button>
+                        <button class="btn btn-primary" data-i18n="featured.products.0.cart">Сагсанд нэмэх</button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <span class="product-card__badge" data-i18n="featured.products.1.badge">Багц</span>
+                  <img
+                    src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=900&q=80"
+                    alt="Студи чихэвч"
+                    data-i18n-alt="featured.products.1.alt"
+                  />
+                  <div class="product-card__body">
+                    <h3 data-i18n="featured.products.1.title">Nomad Studio Audio Set</h3>
+                    <p data-i18n="featured.products.1.body">
+                      Дуу чимээ тусгаарлагч чихэвч, монгол хэлтэй ухаалаг чанга яригч, Spotify багцыг цуг аваарай.
+                    </p>
+                    <div class="product-card__meta">
+                      <span class="product-card__price">₮1,299,000</span>
+                      <div class="product-card__actions">
+                        <button
+                          class="icon-button"
+                          aria-label="Nomad Studio-г хүслийн жагсаалтад нэмэх"
+                          data-i18n-aria-label="featured.products.1.wishlist"
+                        >
+                          ❤
+                        </button>
+                        <button class="btn btn-primary" data-i18n="featured.products.1.cart">Сагсанд нэмэх</button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <span class="product-card__badge" data-i18n="featured.products.2.badge">Онцгой</span>
+                  <img
+                    src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80"
+                    alt="Бүтээлч зөөврийн компьютер"
+                    data-i18n-alt="featured.products.2.alt"
+                  />
+                  <div class="product-card__body">
+                    <h3 data-i18n="featured.products.2.title">Steppe Creator Laptop 16"</h3>
+                    <p data-i18n="featured.products.2.body">
+                      OLED дэлгэц, AI хөргөлттэй их бие, монгол уран бүтээлчидтэй хамт боловсруулсан аялалд тэсвэртэй кейс.
+                    </p>
+                    <div class="product-card__meta">
+                      <span class="product-card__price">₮4,450,000</span>
+                      <div class="product-card__actions">
+                        <button
+                          class="icon-button"
+                          aria-label="Steppe Creator-г хүслийн жагсаалтад нэмэх"
+                          data-i18n-aria-label="featured.products.2.wishlist"
+                        >
+                          ❤
+                        </button>
+                        <button class="btn btn-primary" data-i18n="featured.products.2.cart">Сагсанд нэмэх</button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <span class="product-card__badge" data-i18n="featured.products.3.badge">Эко</span>
+                  <img
+                    src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=900&q=80"
+                    alt="Смарт термостат"
+                    data-i18n-alt="featured.products.3.alt"
+                  />
+                  <div class="product-card__body">
+                    <h3 data-i18n="featured.products.3.title">Ger Smart Climate Hub</h3>
+                    <p data-i18n="featured.products.3.body">
+                      Агаарын чанар, температурыг гадаа дотор ялгалгүй хянаж, эрчим хүч хэмнэлтийг ухаалгаар тооцоолно.
+                    </p>
+                    <div class="product-card__meta">
+                      <span class="product-card__price">₮799,000</span>
+                      <div class="product-card__actions">
+                        <button
+                          class="icon-button"
+                          aria-label="Ger Smart Climate Hub-ийг хүслийн жагсаалтад нэмэх"
+                          data-i18n-aria-label="featured.products.3.wishlist"
+                        >
+                          ❤
+                        </button>
+                        <button class="btn btn-primary" data-i18n="featured.products.3.cart">Сагсанд нэмэх</button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <button
+                class="carousel-control carousel-control--next"
+                aria-label="Бүтээгдэхүүнийг гүйлгэх"
+                data-carousel-next
+                data-i18n-aria-label="carousel.next"
+              >
+                ❯
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="value">
+          <div class="section__intro">
+            <span class="eyebrow" data-i18n="value.eyebrow">Hunnu амлалт</span>
+            <h2 data-i18n="value.heading">Уламжлалт зочломтгой үйлчилгээ, дэвшилтэт технологийн хүчтэй хослол.</h2>
+            <p data-i18n="value.body">
+              Захиалга бүрт Cody худалдааны платформын нарийвчлал, монгол зочломтгой үйлчилгээ хосолж, дижитал тав тухыг
+              соёлын бахархалтай нэгтгэнэ.
+            </p>
+          </div>
+          <div class="value-grid">
+            <article class="value-card">
+              <h3 data-i18n="value.cards.0.title">Найдвартай баталгаа, засвар</h3>
+              <p data-i18n="value.cards.0.body">Сертифтэй инженерүүд хурдан солилт, ил тод үнийн саналтайгаар итгэлийг бий болгодог.</p>
             </article>
-            <article class="story-card">
-              <h3>Signals dashboard</h3>
-              <p>
-                Monitor dwell time, net-zero score, and conversion uplift in a single view designed for human + machine decision
-                making.
-              </p>
-              <a class="link-arrow" href="#">Tour the dashboard</a>
+            <article class="value-card">
+              <h3 data-i18n="value.cards.1.title">Уян хатан төлбөр</h3>
+              <p data-i18n="value.cards.1.body">Монголын томоохон банкуудын зээл, BNPL шийдэл, худалдан авалт бүрд хуримтлагдах оноо.</p>
             </article>
-            <article class="story-card">
-              <h3>Customer rituals</h3>
-              <p>
-                Follow a day-in-the-life series showing how our concierge anticipates needs before they become a shopping task.
-              </p>
-              <a class="link-arrow" href="#">Watch the series</a>
+            <article class="value-card">
+              <h3 data-i18n="value.cards.2.title">Тохиргоо, сургалттай</h3>
+              <p data-i18n="value.cards.2.body">Туршлагын танхимд биечлэн эсвэл онлайн уулзалтаар монгол, англи, хоёр хэлээр хөтлүүлээрэй.</p>
+            </article>
+            <article class="value-card">
+              <h3 data-i18n="value.cards.3.title">Нийгэмд түшиглэсэн мэдлэг</h3>
+              <p data-i18n="value.cards.3.body">Орон нутгийн бүтээлчид, инженерүүдтэй хамтран сургалт, зөвлөгөө, смарт гэрийн туршлагаа хуваалцана.</p>
             </article>
           </div>
         </section>
 
-        <section class="timeline" id="about">
-          <div class="section-heading">
-            <p class="eyebrow">HITL launch path</p>
-            <h2>From first signal to loyal advocates.</h2>
+        <section class="section stories" id="stories">
+          <div class="section__intro">
+            <span class="eyebrow" data-i18n="stories.eyebrow">Мэдлэг &amp; боловсрол</span>
+            <h2 data-i18n="stories.heading">Технологийг итгэлтэй сонгох хүчийг монголчуудад олгоно.</h2>
+            <p data-i18n="stories.body">
+              Шүүмж, худалдан авалтын зөвлөмж, соёлын онцлогийг нэг дор. Бүтээгдэхүүний мэдлэгийг монгол үнэт зүйлтэй
+              уялдуулсан түүхүүдийг уншаарай.
+            </p>
           </div>
-          <ol class="timeline__list">
-            <li>
-              <div class="timeline__dot"></div>
-              <div class="timeline__content">
-                <h3>01. Sense</h3>
-                <p>Collect mood boards, voice notes, and purchase history to form a living brief.</p>
-              </div>
-            </li>
-            <li>
-              <div class="timeline__dot"></div>
-              <div class="timeline__content">
-                <h3>02. Curate</h3>
-                <p>AI drafts assortments. Humans layer context, ethics, and story.</p>
-              </div>
-            </li>
-            <li>
-              <div class="timeline__dot"></div>
-              <div class="timeline__content">
-                <h3>03. Loop</h3>
-                <p>Feedback loops close within hours, training models and mentoring experts simultaneously.</p>
-              </div>
-            </li>
-            <li>
-              <div class="timeline__dot"></div>
-              <div class="timeline__content">
-                <h3>04. Glow</h3>
-                <p>Turn one-off purchases into rituals with proactive concierge nudges.</p>
-              </div>
-            </li>
-          </ol>
+          <div class="story-grid">
+            <article class="story-card">
+              <h3 data-i18n="stories.cards.0.title">Талын нөхцөлд тохирсон ноутбук</h3>
+              <p data-i18n="stories.cards.0.body">Батарейн хугацаа, бат бөх байдал, хэлний дэмжлэгийг харьцуулсан нарийвчилсан гарын авлага.</p>
+              <a href="#" data-i18n="stories.cards.0.cta">Гарын авлагыг унших →</a>
+            </article>
+            <article class="story-card">
+              <h3 data-i18n="stories.cards.1.title">Монгол гэрийн смарт цуврал</h3>
+              <p data-i18n="stories.cards.1.body">Эрчим хүчний хэмнэлттэй халаалт, монгол хэлтэй туслахтай болсон айлуудын бодит түүхийг үзээрэй.</p>
+              <a href="#" data-i18n="stories.cards.1.cta">Цувралыг үзэх →</a>
+            </article>
+            <article class="story-card">
+              <h3 data-i18n="stories.cards.2.title">Hunnu онооны нууц</h3>
+              <p data-i18n="stories.cards.2.body">Бонус оноо, давхар шинэчлэлт, баярын багцыг хэрхэн авах тухай бүрэн тайлбар.</p>
+              <a href="#" data-i18n="stories.cards.2.cta">Гишүүнчлэлийн давуу талыг үзэх →</a>
+            </article>
+          </div>
         </section>
 
-        <section class="cta">
-          <div class="cta__panel">
-            <h2>Design a commerce ritual worth repeating.</h2>
-            <p>Join the next wave of founders building with HITL’s human-in-the-loop commerce stack.</p>
-            <form class="cta__form">
-              <label for="email" class="sr-only">Email address</label>
-              <input type="email" id="email" name="email" placeholder="you@studio.co" required />
-              <button type="submit" class="btn btn-primary">Request a strategy session</button>
+        <section class="section payment-options" id="loyalty">
+          <div class="section__intro">
+            <span class="eyebrow" data-i18n="payments.eyebrow">Төлбөр &amp; урамшуулал</span>
+            <h2 data-i18n="payments.heading">Хүссэн технологио нутгийн уян хатан сонголтоор.</h2>
+            <p data-i18n="payments.body">Таны зорилгод нийцсэн төлөвлөгөөг сонгоод, үйлчилгээ ба чанартай хэзээ ч буулт хийх хэрэггүй.</p>
+          </div>
+          <div class="payment-grid">
+            <article class="payment-card">
+              <h3 data-i18n="payments.cards.0.title">Урамшууллын түвшин</h3>
+              <ul class="icon-list">
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m10.5 2 2.6 5.2 5.7.8-4.1 4 1 5.7-5.2-2.7-5.2 2.7 1-5.7-4.1-4 5.7-.8z" />
+                  </svg>
+                  <span data-i18n="payments.cards.0.items.0">₮10,000 тутамд 1 оноо цуглуулж, улирлын шинэчлэлтэд нэгдээрэй.</span>
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 11.5c0-3.6 3.4-6.5 8-6.5s8 2.9 8 6.5s-3.4 6.5-8 6.5S4 15.1 4 11.5zm11.5 0a3.5 3.5 0 1 0-7 0a3.5 3.5 0 0 0 7 0z" />
+                  </svg>
+                  <span data-i18n="payments.cards.0.items.1">Insider гишүүд давхар баталгаа, баярын хязгаарлагдмал багц авна.</span>
+                </li>
+              </ul>
+            </article>
+            <article class="payment-card">
+              <h3 data-i18n="payments.cards.1.title">Банкны түншлэл</h3>
+              <ul class="icon-list">
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 9L12 4l9 5v2h-2v7h-4v-5H9v5H5v-7H3z" />
+                  </svg>
+                  <span data-i18n="payments.cards.1.items.0">ХААН, Худалдаа Хөгжлийн, Хас банкны 0% хүүтэй лизинг.</span>
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 5h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v3h14V7H5zm0 5v5h14v-5H5z" />
+                  </svg>
+                  <span data-i18n="payments.cards.1.items.1">BNPL болон байгууллагын нэхэмжлэхийг кассан дээр шийднэ.</span>
+                </li>
+              </ul>
+            </article>
+            <article class="payment-card">
+              <h3 data-i18n="payments.cards.2.title">Хаанаас ч дэмжлэг</h3>
+              <ul class="icon-list">
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 3a9 9 0 0 1 9 9v5a3 3 0 0 1-3 3h-3.2a1 1 0 1 1 0-2H18a1 1 0 0 0 1-1v-5a7 7 0 0 0-14 0v5a1 1 0 0 0 1 1h3.2a1 1 0 1 1 0 2H6a3 3 0 0 1-3-3v-5a9 9 0 0 1 9-9zm0 8a2 2 0 1 1 0 4a2 2 0 0 1 0-4z" />
+                  </svg>
+                  <span data-i18n="payments.cards.2.items.0">AI тусламжтай 24/7 халуун шугам хүний зөвлөгөөгөөр дэмжинэ.</span>
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2l9 4v2l-3 1v10h-4v-6H10v6H6V9L3 8V6z" />
+                  </svg>
+                  <span data-i18n="payments.cards.2.items.1">Улаанбаатар дахь туршлагын төв, Дархан ба Эрдэнэтэд түр салбаруудтай.</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section newsletter" aria-labelledby="newsletter-heading">
+          <div class="newsletter__inner">
+            <div>
+              <h2 id="newsletter-heading" data-i18n="newsletter.heading">Hunnu Insider мэдээллийг урьдчилан аваарай.</h2>
+              <p data-i18n="newsletter.body">
+                Шинэ нээлт, соёлын хамтын ажиллагаа, технологийг монгол урлагтай хослуулсан гишүүнчлэлийн багцыг цаг алдалгүй
+                мэдээд аваарай.
+              </p>
+            </div>
+            <form class="newsletter__form" aria-label="И-мэйл бүртгүүлэх" data-i18n-aria-label="newsletter.aria">
+              <label class="sr-only" for="newsletter-email" data-i18n="newsletter.label">И-мэйл хаяг</label>
+              <input
+                id="newsletter-email"
+                type="email"
+                name="email"
+                placeholder="you@example.mn"
+                required
+                data-i18n-placeholder="newsletter.placeholder"
+              />
+              <button type="submit" data-i18n="newsletter.button">Нийтлэлд нэгдэх</button>
             </form>
-            <p class="cta__fineprint">We respond within 24 hours. No spam, just thoughtful collaboration.</p>
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
-        <div>
-          <div class="logo">HITL</div>
-          <p>Crafting retail that keeps humans at the center of every loop.</p>
+        <div class="site-footer__inner">
+          <div class="footer-brand">
+            <img src="assets/hunnu-logo.svg" alt="Hunnu Store" />
+            <p data-i18n="footer.body">
+              Инноваци, хүртээмж, итгэл, чанарыг эрхэмлэсэн Hunnu Store дэлхийн технологийг монгол сэтгэл, Cody системийн
+              найдвартай ажиллагаатайгаар нийлүүлдэг.
+            </p>
+            <div class="badge-grid">
+              <span data-i18n="footer.badges.0">Итгэмжлэгдсэн үйлчилгээ</span>
+              <span data-i18n="footer.badges.1">Баталгаат төв</span>
+              <span data-i18n="footer.badges.2">AI дэмжлэгтэй</span>
+            </div>
+          </div>
+          <nav class="footer-nav" aria-label="Доод цэс" data-i18n-aria-label="footer.navAria">
+            <a href="#home" data-i18n="footer.nav.0">Нүүр</a>
+            <a href="#categories" data-i18n="footer.nav.1">Ангилал</a>
+            <a href="#featured" data-i18n="footer.nav.2">Онцлох</a>
+            <a href="#stories" data-i18n="footer.nav.3">Түүх</a>
+            <a href="#loyalty" data-i18n="footer.nav.4">Төлбөр &amp; урамшуулал</a>
+            <a href="#" data-i18n="footer.nav.5">Бидний тухай</a>
+          </nav>
+          <div class="footer-contact" id="store-locator">
+            <strong data-i18n="footer.visit">Манайд зочлоорой</strong>
+            <span data-i18n="footer.address">Улаанбаатар, Сүхбаатар дүүрэг, Энхтайваны өргөн чөлөө 15</span>
+            <a href="mailto:care@hunnustore.mn">care@hunnustore.mn</a>
+            <a href="tel:+97677112233">+976 77 11 22 33</a>
+          </div>
         </div>
-        <nav aria-label="Footer">
-          <a href="#home">Home</a>
-          <a href="#collections">Collections</a>
-          <a href="#assist">Assist</a>
-          <a href="#stories">Stories</a>
-          <a href="#about">About</a>
-        </nav>
-        <div class="site-footer__meta">
-          <p>© <span id="year"></span> HITL Commerce. All rights reserved.</p>
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
+        <div class="footer-bottom">
+          <span data-i18n-html="footer.copyright">© <span id="year"></span> Hunnu Store. Бүх эрх хамгаалагдсан.</span>
+          <div class="badge-grid">
+            <a href="#" data-i18n="footer.links.0">Нууцлалын бодлого</a>
+            <a href="#" data-i18n="footer.links.1">Үйлчилгээний нөхцөл</a>
+            <a href="#" data-i18n="footer.links.2">Буцаах журам</a>
+          </div>
         </div>
       </footer>
     </div>

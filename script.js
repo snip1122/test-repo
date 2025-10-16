@@ -721,7 +721,31 @@
       dots.forEach((dot, index) => {
         dot.setAttribute('aria-label', t('hero.carousel.dot', { index: index + 1 }));
       });
-    });
+    };
+
+    const goToSlide = (index) => {
+      current = (index + slides.length) % slides.length;
+      slidesContainer.style.transform = `translateX(-${current * 100}%)`;
+      updateDots();
+      resetAuto();
+    };
+
+    const next = () => goToSlide(current + 1);
+    const prev = () => goToSlide(current - 1);
+
+    const resetAuto = () => {
+      if (autoTimer) {
+        window.clearInterval(autoTimer);
+      }
+      autoTimer = window.setInterval(next, 7000);
+    };
+
+    renderDots();
+    updateDots();
+    resetAuto();
+
+    if (nextBtn) nextBtn.addEventListener('click', next);
+    if (prevBtn) prevBtn.addEventListener('click', prev);
   }
 
   const carousel = document.querySelector('[data-carousel]');

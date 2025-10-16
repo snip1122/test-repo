@@ -2,16 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HITL Commerce – Assisted Shopping for Humans + AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hunnustore.mn – Seamless Living, Empowered by Technology</title>
     <meta
       name="description"
-      content="Experience HITL Commerce – a human-in-the-loop marketplace that blends AI curation with expert stylists to deliver products you actually love."
+      content="Discover curated smart home technology, compatibility guidance, and bundled ecosystems designed for Mongolia's modern homes."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -20,358 +20,511 @@
     <a class="skip-link" href="#main">Skip to main content</a>
     <div class="page">
       <header class="site-header" data-scroll-header>
-        <div class="logo">HITL</div>
-        <nav aria-label="Primary navigation" class="site-nav">
-          <a href="#collections">Collections</a>
-          <a href="#assist">Assist</a>
-          <a href="#stories">Stories</a>
-          <a href="#about">About</a>
-        </nav>
-        <div class="header-actions">
-          <button class="btn btn-ghost">Log in</button>
-          <button class="btn btn-primary">Request beta access</button>
+        <div class="site-header__inner">
+          <a class="logo" href="#home">Hunnustore</a>
+          <nav aria-label="Primary" class="site-nav">
+            <div class="nav-item nav-item--mega" data-menu>
+              <button class="nav-trigger" aria-haspopup="true" aria-expanded="false">
+                Smart Home
+              </button>
+              <div class="mega" role="menu">
+                <div class="mega__column">
+                  <p class="mega__title">By Room</p>
+                  <a role="menuitem" href="#living">Living Room</a>
+                  <a role="menuitem" href="#kitchen">Kitchen</a>
+                  <a role="menuitem" href="#bedroom">Bedroom</a>
+                </div>
+                <div class="mega__column">
+                  <p class="mega__title">By Solution</p>
+                  <a role="menuitem" href="#security">Security &amp; Safety</a>
+                  <a role="menuitem" href="#comfort">Comfort &amp; Climate</a>
+                  <a role="menuitem" href="#entertainment">Entertainment</a>
+                </div>
+                <div class="mega__column">
+                  <p class="mega__title">Compatibility Guides</p>
+                  <a role="menuitem" href="#ecosystems">Apple Home</a>
+                  <a role="menuitem" href="#ecosystems">Google Home</a>
+                  <a role="menuitem" href="#ecosystems">Samsung SmartThings</a>
+                </div>
+              </div>
+            </div>
+            <a class="nav-item" href="#ecosystems">Ecosystems</a>
+            <a class="nav-item" href="#services">Services</a>
+            <a class="nav-item" href="#stories">Guides</a>
+          </nav>
+          <div class="header-actions">
+            <button class="btn btn-ghost">Mongolian</button>
+            <button class="btn btn-accent">Book a Consult</button>
+          </div>
         </div>
       </header>
 
       <main id="main">
         <section class="hero" id="home">
           <div class="hero__content">
-            <p class="eyebrow">Human in the loop commerce</p>
-            <h1>Retail therapy meets real humans, guided by adaptive AI.</h1>
+            <p class="eyebrow">Seamless Living, Empowered by Technology</p>
+            <h1>Expertly curated smart ecosystems for the Mongolian home.</h1>
             <p class="lede">
-              HITL pairs neural recommendations with curated human edits so every cart feels intentional.
-              Discover pieces chosen for your taste, your ethics, and your lifestyle in minutes.
+              Shop confident bundles, understand compatibility at a glance, and access on-call specialists who simplify every
+              installation.
             </p>
-            <div class="hero__actions">
-              <button class="btn btn-primary">Shop curated drops</button>
-              <button class="btn btn-secondary">See how it works</button>
-            </div>
-            <dl class="hero__metrics">
+            <form class="hero-search" role="search">
+              <label for="search" class="sr-only">Search smart products</label>
+              <input id="search" name="search" type="search" placeholder="Search for smart lighting, locks, thermostats..." />
+              <button type="submit" class="btn btn-accent">Search</button>
+            </form>
+            <dl class="hero-metrics">
               <div>
-                <dt>82%</dt>
-                <dd>of shoppers say our stylists made discovery effortless.</dd>
+                <dt>98%</dt>
+                <dd>of customers confirm product compatibility before purchase.</dd>
               </div>
               <div>
-                <dt>12m</dt>
-                <dd>data points interpreted with a human touch every day.</dd>
+                <dt>+22%</dt>
+                <dd>increase in average order value with curated bundles.</dd>
               </div>
               <div>
                 <dt>4.9★</dt>
-                <dd>average satisfaction across 40k verified beta sessions.</dd>
+                <dd>local service satisfaction rating across Mongolia.</dd>
               </div>
             </dl>
           </div>
           <div class="hero__visual" aria-hidden="true">
             <div class="hero-card hero-card--primary">
-              <span class="hero-card__eyebrow">Live human assist</span>
-              <p class="hero-card__title">A stylist named Mira is co-editing your cart.</p>
-              <div class="hero-card__avatars">
-                <span class="avatar avatar--ai" title="AI agent"></span>
-                <span class="avatar avatar--human" title="Mira, stylist"></span>
+              <span class="hero-card__eyebrow">Highlighted Ecosystem</span>
+              <h2>Google Home Living Room</h2>
+              <p>Control lighting, security, and climate with a single voice-ready scene.</p>
+              <div class="hero-card__chips">
+                <span class="chip">Voice Scenes</span>
+                <span class="chip">Energy Monitor</span>
+                <span class="chip">Family Profiles</span>
               </div>
-              <p class="hero-card__meta">Response in under 2 minutes.</p>
+              <button class="btn btn-secondary">View bundle</button>
             </div>
             <div class="hero-card hero-card--secondary">
-              <p class="hero-card__title">Adaptive ethics filter</p>
-              <p class="hero-card__meta">Vegan, local, circular supply chain prioritized.</p>
-              <div class="pill-rail">
-                <span class="pill">Regenerative cotton</span>
-                <span class="pill">Fair trade</span>
-                <span class="pill">Zero plastic</span>
-              </div>
+              <p class="hero-card__title">In-home setup available across Ulaanbaatar.</p>
+              <p class="hero-card__meta">Certified installers. Evening appointments.</p>
             </div>
           </div>
         </section>
 
-        <section class="product-experience" id="collections">
+        <section class="ecosystem-rail" id="ecosystems">
           <div class="section-heading">
-            <p class="eyebrow">Curated for every intention</p>
-            <h2>Stay in flow with adaptive collections.</h2>
-            <p class="section-heading__desc">
-              Move between AI-curated suggestions and human edits with one tap. Filter by vibe, intent, or expert team.
-            </p>
+            <p class="eyebrow">Compatibility first</p>
+            <h2>Shop by ecosystem and build a confident smart home.</h2>
+            <p>Start with the platform you already love and discover products that work together flawlessly.</p>
           </div>
-          <div class="product-toolbar" role="toolbar" aria-label="Filter catalog">
-            <div class="chip-group" data-filter-group>
-              <button class="chip is-active" data-filter="all">All</button>
-              <button class="chip" data-filter="new">New rituals</button>
-              <button class="chip" data-filter="ethics">Ethical core</button>
-              <button class="chip" data-filter="tech">HITL tech picks</button>
-              <button class="chip" data-filter="wellness">Wellness</button>
-            </div>
-            <div class="assist-toggle">
-              <label class="switch">
-                <input type="checkbox" id="assist-switch" checked />
-                <span class="slider" aria-hidden="true"></span>
-              </label>
-              <label for="assist-switch">Show human edits</label>
-            </div>
+          <div class="ecosystem-rail__grid">
+            <article class="ecosystem-card" data-ecosystem="google">
+              <header>
+                <img src="assets/pattern.svg" alt="" />
+                <h3>Google Home</h3>
+                <p>Best for Android-forward homes wanting voice-first control.</p>
+              </header>
+              <ul>
+                <li>Curated routines for every room</li>
+                <li>Works with Nest, Philips Hue, Nanoleaf</li>
+                <li>Recommended for flexible renters</li>
+              </ul>
+              <button class="btn btn-secondary" data-ecosystem-trigger>Explore compatible products</button>
+            </article>
+            <article class="ecosystem-card" data-ecosystem="apple">
+              <header>
+                <img src="assets/pattern.svg" alt="" />
+                <h3>Apple Home</h3>
+                <p>Secure automations with HomeKit and Matter support.</p>
+              </header>
+              <ul>
+                <li>Private, end-to-end encrypted control</li>
+                <li>Curations for apartment living</li>
+                <li>Seamless with iPhone, Apple TV, HomePod</li>
+              </ul>
+              <button class="btn btn-secondary" data-ecosystem-trigger>See HomeKit picks</button>
+            </article>
+            <article class="ecosystem-card" data-ecosystem="samsung">
+              <header>
+                <img src="assets/pattern.svg" alt="" />
+                <h3>Samsung SmartThings</h3>
+                <p>Robust automations for growing families and larger homes.</p>
+              </header>
+              <ul>
+                <li>Supports multi-brand device orchestration</li>
+                <li>Ideal for zoned heating + appliance control</li>
+                <li>Pairs with Samsung TVs and appliances</li>
+              </ul>
+              <button class="btn btn-secondary" data-ecosystem-trigger>Shop SmartThings</button>
+            </article>
           </div>
+        </section>
 
-          <div class="product-grid" data-product-grid>
-            <article class="product-card" data-category="new ethics">
-              <div class="product-card__media gradient gradient--sunrise"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">Curated by Mira</p>
-                <h3>Atmos linen wrap dress</h3>
-                <p class="product-card__desc">Made-to-order pieces sewn in Lisbon with remnant linen.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$168</span>
-                  <button class="btn-icon" aria-label="Add Atmos linen wrap dress to bag">❤</button>
+        <section class="starter-kits" id="living">
+          <div class="section-heading">
+            <p class="eyebrow">Room-ready kits</p>
+            <h2>Elevate every space with curated starter bundles.</h2>
+            <p>Select a kit to unlock bundle pricing and see setup expectations before checkout.</p>
+          </div>
+          <div class="starter-kits__grid">
+            <article class="kit-card">
+              <div class="kit-card__media"></div>
+              <div class="kit-card__content">
+                <header>
+                  <h3>Living Room Ambient Scene</h3>
+                  <span class="difficulty" data-level="2">Setup difficulty: 2 / 5</span>
+                </header>
+                <p>Includes smart bulbs, motion sensor, and adaptive dimmer configured for evening rituals.</p>
+                <ul>
+                  <li>Works with Google Home + Apple Home</li>
+                  <li>Guided app setup in 15 minutes</li>
+                  <li>Bundle savings: 12%</li>
+                </ul>
+                <div class="kit-card__actions">
+                  <span class="price">₮649,000</span>
+                  <button class="btn btn-accent">Add bundle</button>
                 </div>
               </div>
             </article>
-            <article class="product-card" data-category="tech new">
-              <div class="product-card__media gradient gradient--violet"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">AI suggested</p>
-                <h3>Neural-knit adaptive jacket</h3>
-                <p class="product-card__desc">Temperature-responsive fibers mapped to your routine.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$248</span>
-                  <button class="btn-icon" aria-label="Add Neural-knit adaptive jacket to bag">❤</button>
+            <article class="kit-card">
+              <div class="kit-card__media kit-card__media--dark"></div>
+              <div class="kit-card__content">
+                <header>
+                  <h3>Smart Kitchen Safety Pack</h3>
+                  <span class="difficulty" data-level="3">Setup difficulty: 3 / 5</span>
+                </header>
+                <p>Air quality, leak detection, and appliance monitoring to safeguard busy households.</p>
+                <ul>
+                  <li>Includes hub with Matter support</li>
+                  <li>On-site installation available</li>
+                  <li>Bundle savings: 18%</li>
+                </ul>
+                <div class="kit-card__actions">
+                  <span class="price">₮859,000</span>
+                  <button class="btn btn-accent">Add bundle</button>
                 </div>
               </div>
             </article>
-            <article class="product-card" data-category="ethics wellness">
-              <div class="product-card__media gradient gradient--emerald"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">Curated by Ravi</p>
-                <h3>Hearth cold brew ritual kit</h3>
-                <p class="product-card__desc">Small-batch adaptogenic blend with reusable glass brewing system.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$64</span>
-                  <button class="btn-icon" aria-label="Add Hearth cold brew ritual kit to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="tech">
-              <div class="product-card__media gradient gradient--slate"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">AI suggested</p>
-                <h3>Continuum mixed reality frames</h3>
-                <p class="product-card__desc">Transition from meetings to streetwear with contextual overlays.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$398</span>
-                  <button class="btn-icon" aria-label="Add Continuum mixed reality frames to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="wellness ethics">
-              <div class="product-card__media gradient gradient--peach"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">Curated by Amaya</p>
-                <h3>Cloudhouse mindful mat</h3>
-                <p class="product-card__desc">Hand-loomed support with biometric posture cues from our AI.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$112</span>
-                  <button class="btn-icon" aria-label="Add Cloudhouse mindful mat to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="new">
-              <div class="product-card__media gradient gradient--aqua"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">AI suggested</p>
-                <h3>Pulse 03 sneakers</h3>
-                <p class="product-card__desc">Self-healing knit and swap-in soles produced on-demand.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$210</span>
-                  <button class="btn-icon" aria-label="Add Pulse 03 sneakers to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="ethics">
-              <div class="product-card__media gradient gradient--amber"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">Curated by Kai</p>
-                <h3>Solaris daylight lamp</h3>
-                <p class="product-card__desc">Solar-powered wellness lamp with recycled glass diffuser.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$186</span>
-                  <button class="btn-icon" aria-label="Add Solaris daylight lamp to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="wellness tech">
-              <div class="product-card__media gradient gradient--berry"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">AI + Mira</p>
-                <h3>Align sonic diffuser</h3>
-                <p class="product-card__desc">AI-personalized scent journeys with human-crafted rituals.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$132</span>
-                  <button class="btn-icon" aria-label="Add Align sonic diffuser to bag">❤</button>
+            <article class="kit-card">
+              <div class="kit-card__media kit-card__media--sage"></div>
+              <div class="kit-card__content">
+                <header>
+                  <h3>Bedroom Wellness Retreat</h3>
+                  <span class="difficulty" data-level="1">Setup difficulty: 1 / 5</span>
+                </header>
+                <p>Wind-down lighting, smart diffuser, and sunrise alarm to improve sleep quality.</p>
+                <ul>
+                  <li>No hub required</li>
+                  <li>Guided onboarding via Hunnustore app</li>
+                  <li>Bundle savings: 10%</li>
+                </ul>
+                <div class="kit-card__actions">
+                  <span class="price">₮529,000</span>
+                  <button class="btn btn-accent">Add bundle</button>
                 </div>
               </div>
             </article>
           </div>
         </section>
 
-        <section class="assist" id="assist">
-          <div class="assist__content">
-            <div class="section-heading">
-              <p class="eyebrow">Always a human on the other side</p>
-              <h2>AI handles the heavy lift. Humans craft the story.</h2>
-            </div>
-            <ul class="assist__list">
-              <li>
-                <h3>Context-rich onboarding</h3>
-                <p>
-                  Start with a 90-second voice note or mood board upload. Our AI translates it into actionable briefs for stylists
-                  who refine the picks.
-                </p>
-              </li>
-              <li>
-                <h3>Ethics that stay honest</h3>
-                <p>
-                  Every recommendation is co-signed by vetted experts who uphold HITL standards for supply chain transparency,
-                  inclusivity, and long-term durability.
-                </p>
-              </li>
-              <li>
-                <h3>Adaptive concierge</h3>
-                <p>
-                  Your concierge tracks changes in schedule or climate, nudging AI models to refresh selections before you even
-                  realize you need them.
-                </p>
-              </li>
-            </ul>
+        <section class="insights" id="stories">
+          <div class="insights__content">
+            <article>
+              <h2>Guides &amp; explainers for every journey.</h2>
+              <p>
+                Master the essentials with weekly Mongolian-language walkthroughs, video tours, and downloadable checklists
+                curated by our smart living strategists.
+              </p>
+              <div class="insight-links">
+                <a href="#">Smart lighting basics</a>
+                <a href="#">Choosing the right hub</a>
+                <a href="#">Matter compatibility explained</a>
+              </div>
+            </article>
+            <aside>
+              <div class="insight-video">
+                <p class="eyebrow">Featured Video</p>
+                <h3>How a family in Khan-Uul automated their evening routine.</h3>
+                <button class="btn btn-secondary">Watch now</button>
+              </div>
+            </aside>
           </div>
-          <div class="assist__panel" role="presentation">
-            <div class="chat-card">
-              <div class="chat-card__header">
-                <div class="chat-card__status">
-                  <span class="status-dot"></span>
-                  <span>Live human assist</span>
-                </div>
-                <span class="chat-card__time">1m avg wait</span>
-              </div>
-              <div class="chat-card__thread">
-                <div class="chat-card__message chat-card__message--ai">
-                  <p>These jackets pair with your upcoming retreat climate and color palette.</p>
-                </div>
-                <div class="chat-card__message chat-card__message--human">
-                  <p>
-                    I swapped look 2 for a lighter layer from Atelier M. Ethically dyed, perfect with the Atmos wrap dress you
-                    loved.
-                  </p>
-                </div>
-                <div class="chat-card__message chat-card__message--user">
-                  <p>Perfect. Can we add matching accessories under $120?</p>
+        </section>
+
+        <section class="best-sellers" id="security">
+          <div class="section-heading">
+            <p class="eyebrow">Popular this week</p>
+            <h2>Trusted smart tech ready to ship today.</h2>
+          </div>
+          <div class="product-grid" data-product-grid>
+            <article class="product-card" data-compatibility="google apple">
+              <div class="product-card__media"></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Works with Google &amp; Apple</p>
+                <h3>Hue Gradient Lightstrip</h3>
+                <p>Create cinema-worthy scenes with adaptive color.</p>
+                <div class="product-card__meta">
+                  <span class="price">₮189,000</span>
+                  <span class="rating">4.8</span>
                 </div>
               </div>
-              <form class="chat-card__composer">
-                <label for="chat-input" class="sr-only">Send a message</label>
-                <input id="chat-input" type="text" placeholder="Ask for tweaks, swaps, or new vibes..." />
-                <button type="submit" class="btn btn-primary">Send</button>
+            </article>
+            <article class="product-card" data-compatibility="google samsung">
+              <div class="product-card__media product-card__media--dark"></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Works with Google &amp; SmartThings</p>
+                <h3>Aqara Motion Sensor P2</h3>
+                <p>Trigger lights, temperature, or security automations.</p>
+                <div class="product-card__meta">
+                  <span class="price">₮79,000</span>
+                  <span class="rating">4.7</span>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-compatibility="apple">
+              <div class="product-card__media product-card__media--sage"></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Works with Apple Home</p>
+                <h3>Level Bolt Smart Lock</h3>
+                <p>Invisible install that keeps your existing hardware.</p>
+                <div class="product-card__meta">
+                  <span class="price">₮399,000</span>
+                  <span class="rating">4.9</span>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-compatibility="google samsung">
+              <div class="product-card__media product-card__media--accent"></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Works with Google &amp; SmartThings</p>
+                <h3>SwitchBot Curtain 3</h3>
+                <p>Automate drapes without wiring. Ideal for renters.</p>
+                <div class="product-card__meta">
+                  <span class="price">₮259,000</span>
+                  <span class="rating">4.6</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="compat-filter" role="group" aria-label="Filter by ecosystem">
+            <span>Filter by ecosystem:</span>
+            <button class="chip is-active" data-filter="all">All</button>
+            <button class="chip" data-filter="google">Google</button>
+            <button class="chip" data-filter="apple">Apple</button>
+            <button class="chip" data-filter="samsung">SmartThings</button>
+          </div>
+        </section>
+
+        <section class="services" id="services">
+          <div class="service-banner">
+            <article>
+              <h2>Support that matches your ambition.</h2>
+              <div class="service-list">
+                <div>
+                  <h3>Installation</h3>
+                  <p>Certified technicians available in Ulaanbaatar and Darkhan.</p>
+                </div>
+                <div>
+                  <h3>Extended Warranty</h3>
+                  <p>Optional 3-year protection with device health check reminders.</p>
+                </div>
+                <div>
+                  <h3>Local Experts</h3>
+                  <p>Chat with Mongolian-speaking specialists seven days a week.</p>
+                </div>
+              </div>
+              <button class="btn btn-accent">Schedule a consultation</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="testimonials">
+          <div class="section-heading">
+            <p class="eyebrow">Community voices</p>
+            <h2>Smart homes shaped by Mongolian lifestyles.</h2>
+          </div>
+          <div class="testimonial-grid">
+            <figure>
+              <blockquote>
+                “The setup meter told us exactly what to expect, and the Google bundle worked flawlessly with our Nest speakers.”
+              </blockquote>
+              <figcaption>Oyun &amp; Bat – Bayanzürkh</figcaption>
+            </figure>
+            <figure>
+              <blockquote>
+                “We used the AR preview to see the lightstrip in our living room before buying. Zero surprises when it arrived.”
+              </blockquote>
+              <figcaption>Amaraa – Khan-Uul</figcaption>
+            </figure>
+            <figure>
+              <blockquote>
+                “The compatibility filter saved me so much time. Everything just works with our Apple setup.”
+              </blockquote>
+              <figcaption>Khulan – Sükhbaatar</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="newsletter" id="comfort">
+          <div class="newsletter__panel">
+            <div>
+              <h2>Stay ahead with tailored smart home guidance.</h2>
+              <p>Monthly playbooks, local installation offers, and exclusive bundle drops.</p>
+              <form class="newsletter__form">
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.mn" required />
+                <button type="submit" class="btn btn-accent">Subscribe</button>
               </form>
             </div>
+            <aside class="newsletter__aside">
+              <p class="eyebrow">AR Preview</p>
+              <h3>See it in your space</h3>
+              <p>Launch the Hunnustore AR experience to visualize scale, finish, and placement before you buy.</p>
+              <button class="btn btn-secondary">Launch AR preview</button>
+            </aside>
           </div>
         </section>
 
-        <section class="stories" id="stories">
-          <div class="section-heading">
-            <p class="eyebrow">Signals from the loop</p>
-            <h2>Insights your team can act on in real time.</h2>
-            <p class="section-heading__desc">
-              Align merchandising, CX, and supply teams with dashboards synthesizing both AI predictions and human annotations.
-            </p>
+        <section class="pdp-preview" id="pdp">
+          <header class="section-heading">
+            <p class="eyebrow">Product detail blueprint</p>
+            <h2>A PDP that informs without overwhelming.</h2>
+            <p>Layered information, compatibility validation, and guided bundling keep customers confident from discovery to checkout.</p>
+          </header>
+          <div class="pdp-layout">
+            <div class="pdp-gallery">
+              <div class="gallery-main"></div>
+              <div class="gallery-thumbs">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <button class="btn btn-secondary">View in your room (AR)</button>
+            </div>
+            <div class="pdp-summary">
+              <h3>Hue Gradient Lightstrip – 2m</h3>
+              <p class="pdp-tag">Setup difficulty</p>
+              <div class="difficulty-meter" role="img" aria-label="Setup difficulty 2 out of 5">
+                <span class="meter" data-filled="2" style="--filled:2"></span>
+              </div>
+              <p class="pdp-price">₮189,000</p>
+              <p class="pdp-desc">Immersive accent lighting with adaptive color scenes and Matter compatibility.</p>
+              <div class="compat-badges" role="group" aria-label="Compatibility filters">
+                <button class="badge is-active" data-compat="google">Google Home</button>
+                <button class="badge" data-compat="apple">Apple Home</button>
+                <button class="badge" data-compat="samsung">SmartThings</button>
+              </div>
+              <div class="pdp-ctas">
+                <button class="btn btn-accent">Add to cart</button>
+                <button class="btn btn-secondary">Build your ecosystem</button>
+              </div>
+            </div>
+            <aside class="pdp-sidebar">
+              <div class="bundler" data-bundler data-base-price="189000">
+                <h4>Build your ecosystem</h4>
+                <p>Add complementary products verified for your ecosystem.</p>
+                <ul class="bundler__list">
+                  <li data-compat="google apple">
+                    <label>
+                      <input type="checkbox" checked />
+                      <span>Smart Plug Mini (₮39,000)</span>
+                    </label>
+                  </li>
+                  <li data-compat="google samsung">
+                    <label>
+                      <input type="checkbox" checked />
+                      <span>Motion Sensor P2 (₮79,000)</span>
+                    </label>
+                  </li>
+                  <li data-compat="google">
+                    <label>
+                      <input type="checkbox" />
+                      <span>Nest Hub (₂nd Gen) (₮249,000)</span>
+                    </label>
+                  </li>
+                </ul>
+                <div class="bundler__summary">
+                  <p>Total bundle</p>
+                  <p class="bundler__price">₮307,000</p>
+                  <p class="bundler__savings">Bundle savings: 11%</p>
+                </div>
+                <button class="btn btn-accent">Add bundle to cart</button>
+              </div>
+              <div class="assurance">
+                <h4>Service &amp; assurance</h4>
+                <ul>
+                  <li>Installation concierge available</li>
+                  <li>3-year extended protection</li>
+                  <li>Chat with a Mongolian smart home expert</li>
+                </ul>
+              </div>
+            </aside>
           </div>
-          <div class="stories__grid">
-            <article class="story-card">
-              <h3>Stylist annotations</h3>
-              <p>
-                Discover how Mira, Kai, and other stylists tag emergent needs, letting AI shift recommendations from seasonal to
-                situational.
-              </p>
-              <a class="link-arrow" href="#">Read the playbook</a>
-            </article>
-            <article class="story-card">
-              <h3>Signals dashboard</h3>
-              <p>
-                Monitor dwell time, net-zero score, and conversion uplift in a single view designed for human + machine decision
-                making.
-              </p>
-              <a class="link-arrow" href="#">Tour the dashboard</a>
-            </article>
-            <article class="story-card">
-              <h3>Customer rituals</h3>
-              <p>
-                Follow a day-in-the-life series showing how our concierge anticipates needs before they become a shopping task.
-              </p>
-              <a class="link-arrow" href="#">Watch the series</a>
-            </article>
+          <div class="pdp-tabs">
+            <button class="tab is-active" data-panel="overview">Overview</button>
+            <button class="tab" data-panel="specs">Technical specs</button>
+            <button class="tab" data-panel="install">Compatibility &amp; install</button>
+            <button class="tab" data-panel="reviews">Reviews</button>
           </div>
-        </section>
-
-        <section class="timeline" id="about">
-          <div class="section-heading">
-            <p class="eyebrow">HITL launch path</p>
-            <h2>From first signal to loyal advocates.</h2>
-          </div>
-          <ol class="timeline__list">
-            <li>
-              <div class="timeline__dot"></div>
-              <div class="timeline__content">
-                <h3>01. Sense</h3>
-                <p>Collect mood boards, voice notes, and purchase history to form a living brief.</p>
-              </div>
-            </li>
-            <li>
-              <div class="timeline__dot"></div>
-              <div class="timeline__content">
-                <h3>02. Curate</h3>
-                <p>AI drafts assortments. Humans layer context, ethics, and story.</p>
-              </div>
-            </li>
-            <li>
-              <div class="timeline__dot"></div>
-              <div class="timeline__content">
-                <h3>03. Loop</h3>
-                <p>Feedback loops close within hours, training models and mentoring experts simultaneously.</p>
-              </div>
-            </li>
-            <li>
-              <div class="timeline__dot"></div>
-              <div class="timeline__content">
-                <h3>04. Glow</h3>
-                <p>Turn one-off purchases into rituals with proactive concierge nudges.</p>
-              </div>
-            </li>
-          </ol>
-        </section>
-
-        <section class="cta">
-          <div class="cta__panel">
-            <h2>Design a commerce ritual worth repeating.</h2>
-            <p>Join the next wave of founders building with HITL’s human-in-the-loop commerce stack.</p>
-            <form class="cta__form">
-              <label for="email" class="sr-only">Email address</label>
-              <input type="email" id="email" name="email" placeholder="you@studio.co" required />
-              <button type="submit" class="btn btn-primary">Request a strategy session</button>
-            </form>
-            <p class="cta__fineprint">We respond within 24 hours. No spam, just thoughtful collaboration.</p>
+          <div class="pdp-panels">
+            <section class="panel is-active" id="panel-overview">
+              <h4>Overview</h4>
+              <p>Layered ambient lighting, adaptive scenes, and voice control to transform every movie night.</p>
+            </section>
+            <section class="panel" id="panel-specs">
+              <h4>Technical specs</h4>
+              <ul>
+                <li>Length: 2 meters (extendable)</li>
+                <li>Connectivity: Matter over Wi-Fi, Bluetooth</li>
+                <li>Lumens: 1800</li>
+              </ul>
+            </section>
+            <section class="panel" id="panel-install">
+              <h4>Compatibility &amp; install</h4>
+              <p>Works with Google Home, Apple Home, Samsung SmartThings. Includes adhesive mounts and corner clips.</p>
+            </section>
+            <section class="panel" id="panel-reviews">
+              <h4>Reviews</h4>
+              <p>“The AR preview meant no guesswork. Install took 10 minutes thanks to the clear setup meter.”</p>
+            </section>
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
-        <div>
-          <div class="logo">HITL</div>
-          <p>Crafting retail that keeps humans at the center of every loop.</p>
+        <div class="site-footer__top">
+          <div>
+            <a class="logo" href="#home">Hunnustore</a>
+            <p>Leading Mongolia into seamless, confident smart living.</p>
+          </div>
+          <div>
+            <h4>Navigate</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#ecosystems">Ecosystems</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#pdp">Product detail</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Consult an expert</a></li>
+              <li><a href="#">Installation scheduling</a></li>
+              <li><a href="#">Returns &amp; exchanges</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Follow</h4>
+            <ul>
+              <li><a href="#">YouTube</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ul>
+          </div>
         </div>
-        <nav aria-label="Footer">
-          <a href="#home">Home</a>
-          <a href="#collections">Collections</a>
-          <a href="#assist">Assist</a>
-          <a href="#stories">Stories</a>
-          <a href="#about">About</a>
-        </nav>
-        <div class="site-footer__meta">
-          <p>© <span id="year"></span> HITL Commerce. All rights reserved.</p>
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
+        <div class="site-footer__bottom">
+          <p>© <span id="year"></span> Hunnustore.mn. All rights reserved.</p>
+          <div class="footer-meta">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+          </div>
         </div>
       </footer>
     </div>

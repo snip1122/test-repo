@@ -1,0 +1,9 @@
+{
+  "name": "hunnu-store-front",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static front-end prototype for the Hunnu Store e-commerce experience.",
+  "scripts": {
+    "start": "node serve.js"
+  }
+}

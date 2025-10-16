@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HITL Commerce – Assisted Shopping for Humans + AI</title>
+    <title>Hunnu Store – Mongolian Technology Elevated</title>
     <meta
       name="description"
-      content="Experience HITL Commerce – a human-in-the-loop marketplace that blends AI curation with expert stylists to deliver products you actually love."
+      content="Discover Hunnu Store, a modern Mongolian e-commerce destination for premium electronics, trusted warranties, and culturally inspired service."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -19,359 +19,444 @@
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
     <div class="page">
+      <div class="top-bar">
+        <div class="top-bar__inner">
+          <div class="top-bar__meta">
+            <span>📍 Ulaanbaatar City Center</span>
+            <a href="tel:+97677112233">☎ +976 77 11 22 33</a>
+            <span>Mon–Sat: 09:00–21:00</span>
+          </div>
+          <div class="top-bar__links">
+            <a href="#store-locator" aria-label="Find store locations">
+              <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2a7 7 0 0 0-7 7c0 4.1 3.8 8.7 6 11 1 .9 1.3.9 2.2 0 2.2-2.3 6-6.9 6-11a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5Z"
+                />
+              </svg>
+              Store Locator
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </div>
+
       <header class="site-header" data-scroll-header>
-        <div class="logo">HITL</div>
-        <nav aria-label="Primary navigation" class="site-nav">
-          <a href="#collections">Collections</a>
-          <a href="#assist">Assist</a>
-          <a href="#stories">Stories</a>
-          <a href="#about">About</a>
-        </nav>
-        <div class="header-actions">
-          <button class="btn btn-ghost">Log in</button>
-          <button class="btn btn-primary">Request beta access</button>
+        <div class="site-header__inner">
+          <a class="brand" href="#home">
+            <span class="brand__mark">
+              <img src="assets/hunnu-logo.svg" alt="Hunnu Store" />
+            </span>
+            <span class="brand__name">Hunnu Store</span>
+          </a>
+          <form class="search" role="search" aria-label="Site search">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M10.5 3a7.5 7.5 0 1 1-5.3 12.8l-2.7 2.7a1 1 0 0 1-1.5-1.4l2.7-2.7A7.5 7.5 0 0 1 10.5 3Zm0 2a5.5 5.5 0 1 0 0 11a5.5 5.5 0 0 0 0-11Z"
+              />
+            </svg>
+            <input type="search" name="query" placeholder="Search phones, laptops, smart home..." />
+          </form>
+          <div class="header-actions">
+            <button class="icon-button" aria-label="Wishlist">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 20.7c-.4 0-.7-.2-1-.4C7 16.9 4 13.9 4 10.4C4 7.4 6.3 5 9.2 5c1.2 0 2.4.5 3.2 1.4c.8-.9 2-1.4 3.2-1.4C17.7 5 20 7.4 20 10.4c0 3.5-3 6.5-7 9.9c-.3.2-.6.4-1 .4Z"
+                />
+              </svg>
+            </button>
+            <button class="icon-button" aria-label="Compare products">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 4h3v16H5zm5 5h3v11h-3zm5-3h3v14h-3z" />
+              </svg>
+            </button>
+            <button class="icon-button" aria-label="Account">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 3a4 4 0 1 1 0 8a4 4 0 0 1 0-8Zm0 10c3.9 0 7 2.2 7 4.9c0 .6-.4 1.1-1 1.1H6c-.6 0-1-.5-1-1.1c0-2.7 3.1-4.9 7-4.9Z"
+                />
+              </svg>
+            </button>
+            <button class="icon-button" aria-label="Shopping cart">
+              <span aria-hidden="true">2</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.2 5l-.5-2H3a1 1 0 1 0 0 2h1.2l1.8 8.4A2 2 0 0 0 7.9 15H18a1 1 0 1 0 0-2H8l-.2-1h9.9a2 2 0 0 0 2-1.6L21 6H6.2ZM8 18a2 2 0 1 0 0 4a2 2 0 0 0 0-4Zm9 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4Z"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </header>
 
+      <nav class="primary-nav" aria-label="Primary">
+        <div class="primary-nav__inner">
+          <div class="primary-nav__menu">
+            <a href="#phones">Phones</a>
+            <a href="#laptops">Laptops</a>
+            <a href="#audio">Audio</a>
+            <a href="#smart-home">Smart Home</a>
+            <a href="#accessories">Accessories</a>
+            <a href="#stories">Stories</a>
+          </div>
+          <a class="primary-nav__promo" href="#loyalty">
+            Earn 3x loyalty points on launch week ⚡
+          </a>
+        </div>
+      </nav>
+
       <main id="main">
         <section class="hero" id="home">
-          <div class="hero__content">
-            <p class="eyebrow">Human in the loop commerce</p>
-            <h1>Retail therapy meets real humans, guided by adaptive AI.</h1>
-            <p class="lede">
-              HITL pairs neural recommendations with curated human edits so every cart feels intentional.
-              Discover pieces chosen for your taste, your ethics, and your lifestyle in minutes.
-            </p>
-            <div class="hero__actions">
-              <button class="btn btn-primary">Shop curated drops</button>
-              <button class="btn btn-secondary">See how it works</button>
+          <div class="hero__inner">
+            <div class="hero__copy">
+              <span class="tag">Tradition meets innovation</span>
+              <h1>Premium electronics curated for Mongolia’s modern pioneers.</h1>
+              <p>
+                Hunnu Store pairs trusted international brands with Mongolian service, warranties, and payment flexibility. Shop
+                with confidence online or in-store, all powered by the Cody e-commerce engine.
+              </p>
+              <div class="hero__actions">
+                <a class="btn btn-primary" href="#featured">Shop latest arrivals</a>
+                <a class="btn btn-secondary" href="#value">Discover the Hunnu promise</a>
+              </div>
+              <dl class="metrics">
+                <div class="metric">
+                  <dt>4.9★</dt>
+                  <dd>Average rating across 8k local customers</dd>
+                </div>
+                <div class="metric">
+                  <dt>48h</dt>
+                  <dd>Express delivery in Ulaanbaatar</dd>
+                </div>
+                <div class="metric">
+                  <dt>24/7</dt>
+                  <dd>Human & AI assisted support</dd>
+                </div>
+              </dl>
             </div>
-            <dl class="hero__metrics">
-              <div>
-                <dt>82%</dt>
-                <dd>of shoppers say our stylists made discovery effortless.</dd>
+            <div class="hero-carousel" data-hero>
+              <div class="hero-carousel__slides">
+                <article
+                  class="hero-slide"
+                  style="background-image: url('https://images.unsplash.com/photo-1545239351-ef35f43d514b?auto=format&fit=crop&w=1200&q=80');"
+                >
+                  <div class="hero-slide__content">
+                    <h3>Flagship phones with Hunnu Care+</h3>
+                    <p>Exclusive screen protection, trade-in guarantees, and Mongolian language onboarding from our experts.</p>
+                    <a class="btn btn-primary" href="#phones">Explore phones</a>
+                  </div>
+                </article>
+                <article
+                  class="hero-slide"
+                  style="background-image: url('https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80');"
+                >
+                  <div class="hero-slide__content">
+                    <h3>Smart homes inspired by ger hospitality</h3>
+                    <p>Automate heating, lighting, and security while honoring the warmth of Mongolian tradition.</p>
+                    <a class="btn btn-primary" href="#smart-home">Upgrade your home</a>
+                  </div>
+                </article>
               </div>
-              <div>
-                <dt>12m</dt>
-                <dd>data points interpreted with a human touch every day.</dd>
+              <div class="hero-carousel__nav">
+                <button class="hero-arrow" data-hero-prev aria-label="Previous slide">❮</button>
+                <div class="hero-dots" role="tablist"></div>
+                <button class="hero-arrow" data-hero-next aria-label="Next slide">❯</button>
               </div>
-              <div>
-                <dt>4.9★</dt>
-                <dd>average satisfaction across 40k verified beta sessions.</dd>
-              </div>
-            </dl>
-          </div>
-          <div class="hero__visual" aria-hidden="true">
-            <div class="hero-card hero-card--primary">
-              <span class="hero-card__eyebrow">Live human assist</span>
-              <p class="hero-card__title">A stylist named Mira is co-editing your cart.</p>
-              <div class="hero-card__avatars">
-                <span class="avatar avatar--ai" title="AI agent"></span>
-                <span class="avatar avatar--human" title="Mira, stylist"></span>
-              </div>
-              <p class="hero-card__meta">Response in under 2 minutes.</p>
-            </div>
-            <div class="hero-card hero-card--secondary">
-              <p class="hero-card__title">Adaptive ethics filter</p>
-              <p class="hero-card__meta">Vegan, local, circular supply chain prioritized.</p>
-              <div class="pill-rail">
-                <span class="pill">Regenerative cotton</span>
-                <span class="pill">Fair trade</span>
-                <span class="pill">Zero plastic</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="product-experience" id="collections">
-          <div class="section-heading">
-            <p class="eyebrow">Curated for every intention</p>
-            <h2>Stay in flow with adaptive collections.</h2>
-            <p class="section-heading__desc">
-              Move between AI-curated suggestions and human edits with one tap. Filter by vibe, intent, or expert team.
-            </p>
-          </div>
-          <div class="product-toolbar" role="toolbar" aria-label="Filter catalog">
-            <div class="chip-group" data-filter-group>
-              <button class="chip is-active" data-filter="all">All</button>
-              <button class="chip" data-filter="new">New rituals</button>
-              <button class="chip" data-filter="ethics">Ethical core</button>
-              <button class="chip" data-filter="tech">HITL tech picks</button>
-              <button class="chip" data-filter="wellness">Wellness</button>
-            </div>
-            <div class="assist-toggle">
-              <label class="switch">
-                <input type="checkbox" id="assist-switch" checked />
-                <span class="slider" aria-hidden="true"></span>
-              </label>
-              <label for="assist-switch">Show human edits</label>
-            </div>
-          </div>
-
-          <div class="product-grid" data-product-grid>
-            <article class="product-card" data-category="new ethics">
-              <div class="product-card__media gradient gradient--sunrise"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">Curated by Mira</p>
-                <h3>Atmos linen wrap dress</h3>
-                <p class="product-card__desc">Made-to-order pieces sewn in Lisbon with remnant linen.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$168</span>
-                  <button class="btn-icon" aria-label="Add Atmos linen wrap dress to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="tech new">
-              <div class="product-card__media gradient gradient--violet"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">AI suggested</p>
-                <h3>Neural-knit adaptive jacket</h3>
-                <p class="product-card__desc">Temperature-responsive fibers mapped to your routine.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$248</span>
-                  <button class="btn-icon" aria-label="Add Neural-knit adaptive jacket to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="ethics wellness">
-              <div class="product-card__media gradient gradient--emerald"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">Curated by Ravi</p>
-                <h3>Hearth cold brew ritual kit</h3>
-                <p class="product-card__desc">Small-batch adaptogenic blend with reusable glass brewing system.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$64</span>
-                  <button class="btn-icon" aria-label="Add Hearth cold brew ritual kit to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="tech">
-              <div class="product-card__media gradient gradient--slate"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">AI suggested</p>
-                <h3>Continuum mixed reality frames</h3>
-                <p class="product-card__desc">Transition from meetings to streetwear with contextual overlays.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$398</span>
-                  <button class="btn-icon" aria-label="Add Continuum mixed reality frames to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="wellness ethics">
-              <div class="product-card__media gradient gradient--peach"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">Curated by Amaya</p>
-                <h3>Cloudhouse mindful mat</h3>
-                <p class="product-card__desc">Hand-loomed support with biometric posture cues from our AI.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$112</span>
-                  <button class="btn-icon" aria-label="Add Cloudhouse mindful mat to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="new">
-              <div class="product-card__media gradient gradient--aqua"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">AI suggested</p>
-                <h3>Pulse 03 sneakers</h3>
-                <p class="product-card__desc">Self-healing knit and swap-in soles produced on-demand.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$210</span>
-                  <button class="btn-icon" aria-label="Add Pulse 03 sneakers to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="ethics">
-              <div class="product-card__media gradient gradient--amber"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">Curated by Kai</p>
-                <h3>Solaris daylight lamp</h3>
-                <p class="product-card__desc">Solar-powered wellness lamp with recycled glass diffuser.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$186</span>
-                  <button class="btn-icon" aria-label="Add Solaris daylight lamp to bag">❤</button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card" data-category="wellness tech">
-              <div class="product-card__media gradient gradient--berry"></div>
-              <div class="product-card__body">
-                <p class="product-card__tag">AI + Mira</p>
-                <h3>Align sonic diffuser</h3>
-                <p class="product-card__desc">AI-personalized scent journeys with human-crafted rituals.</p>
-                <div class="product-card__footer">
-                  <span class="product-card__price">$132</span>
-                  <button class="btn-icon" aria-label="Add Align sonic diffuser to bag">❤</button>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="assist" id="assist">
-          <div class="assist__content">
-            <div class="section-heading">
-              <p class="eyebrow">Always a human on the other side</p>
-              <h2>AI handles the heavy lift. Humans craft the story.</h2>
-            </div>
-            <ul class="assist__list">
-              <li>
-                <h3>Context-rich onboarding</h3>
-                <p>
-                  Start with a 90-second voice note or mood board upload. Our AI translates it into actionable briefs for stylists
-                  who refine the picks.
-                </p>
-              </li>
-              <li>
-                <h3>Ethics that stay honest</h3>
-                <p>
-                  Every recommendation is co-signed by vetted experts who uphold HITL standards for supply chain transparency,
-                  inclusivity, and long-term durability.
-                </p>
-              </li>
-              <li>
-                <h3>Adaptive concierge</h3>
-                <p>
-                  Your concierge tracks changes in schedule or climate, nudging AI models to refresh selections before you even
-                  realize you need them.
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="assist__panel" role="presentation">
-            <div class="chat-card">
-              <div class="chat-card__header">
-                <div class="chat-card__status">
-                  <span class="status-dot"></span>
-                  <span>Live human assist</span>
-                </div>
-                <span class="chat-card__time">1m avg wait</span>
-              </div>
-              <div class="chat-card__thread">
-                <div class="chat-card__message chat-card__message--ai">
-                  <p>These jackets pair with your upcoming retreat climate and color palette.</p>
-                </div>
-                <div class="chat-card__message chat-card__message--human">
-                  <p>
-                    I swapped look 2 for a lighter layer from Atelier M. Ethically dyed, perfect with the Atmos wrap dress you
-                    loved.
-                  </p>
-                </div>
-                <div class="chat-card__message chat-card__message--user">
-                  <p>Perfect. Can we add matching accessories under $120?</p>
-                </div>
-              </div>
-              <form class="chat-card__composer">
-                <label for="chat-input" class="sr-only">Send a message</label>
-                <input id="chat-input" type="text" placeholder="Ask for tweaks, swaps, or new vibes..." />
-                <button type="submit" class="btn btn-primary">Send</button>
-              </form>
             </div>
           </div>
         </section>
 
-        <section class="stories" id="stories">
-          <div class="section-heading">
-            <p class="eyebrow">Signals from the loop</p>
-            <h2>Insights your team can act on in real time.</h2>
-            <p class="section-heading__desc">
-              Align merchandising, CX, and supply teams with dashboards synthesizing both AI predictions and human annotations.
+        <section class="section" id="categories">
+          <div class="section__intro">
+            <span class="eyebrow">Shop by category</span>
+            <h2>Technology for every part of Mongolian life.</h2>
+            <p>
+              From nomadic journeys to city productivity, our curated categories highlight products proven to withstand local
+              conditions and lifestyles.
             </p>
           </div>
-          <div class="stories__grid">
-            <article class="story-card">
-              <h3>Stylist annotations</h3>
-              <p>
-                Discover how Mira, Kai, and other stylists tag emergent needs, letting AI shift recommendations from seasonal to
-                situational.
-              </p>
-              <a class="link-arrow" href="#">Read the playbook</a>
+          <div class="category-grid">
+            <a class="category-card" id="phones" href="#featured">
+              <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80" alt="Phones" />
+              <div class="category-card__label">
+                <h3>Phones</h3>
+                <span>5G ready · Mongolian interface</span>
+              </div>
+            </a>
+            <a class="category-card" id="laptops" href="#featured">
+              <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80" alt="Laptops" />
+              <div class="category-card__label">
+                <h3>Laptops &amp; Tablets</h3>
+                <span>Creative power · Local warranty</span>
+              </div>
+            </a>
+            <a class="category-card" id="audio" href="#featured">
+              <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=900&q=80" alt="Audio" />
+              <div class="category-card__label">
+                <h3>Audio</h3>
+                <span>Concert clarity · Travel ready</span>
+              </div>
+            </a>
+            <a class="category-card" id="smart-home" href="#featured">
+              <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=80" alt="Smart home" />
+              <div class="category-card__label">
+                <h3>Smart Home</h3>
+                <span>Security · Comfort · Efficiency</span>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="section featured" id="featured">
+          <div class="section__intro">
+            <span class="eyebrow">Featured this week</span>
+            <h2>Highlighting innovation with exclusive Hunnu perks.</h2>
+            <p>
+              Each featured product includes localized setup, bilingual support, and extended warranty coverage backed by our
+              Cody-powered service desk.
+            </p>
+          </div>
+          <div class="featured__wrapper">
+            <div class="product-carousel" data-carousel>
+              <button class="carousel-control carousel-control--prev" aria-label="Scroll products" data-carousel-prev>❮</button>
+              <div class="product-track">
+                <article class="product-card">
+                  <span class="product-card__badge">New</span>
+                  <img src="https://images.unsplash.com/photo-1510554310709-f60c2c65586a?auto=format&fit=crop&w=900&q=80" alt="Galaxy S flagship" />
+                  <div class="product-card__body">
+                    <h3>Galaxy S Ultra Hunnu Edition</h3>
+                    <p>Top-tier camera tuned for Mongolian landscapes, includes 2-year Hunnu Care+ protection.</p>
+                    <div class="product-card__meta">
+                      <span class="product-card__price">₮3,899,000</span>
+                      <div class="product-card__actions">
+                        <button class="icon-button" aria-label="Add Galaxy S Ultra to wishlist">❤</button>
+                        <button class="btn btn-primary">Add to cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <span class="product-card__badge">Bundle</span>
+                  <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=900&q=80" alt="Studio headphones" />
+                  <div class="product-card__body">
+                    <h3>Nomad Studio Audio Set</h3>
+                    <p>Noise-cancelling headphones plus smart speaker with Mongolian voice control and Spotify bundle.</p>
+                    <div class="product-card__meta">
+                      <span class="product-card__price">₮1,299,000</span>
+                      <div class="product-card__actions">
+                        <button class="icon-button" aria-label="Add Nomad Studio to wishlist">❤</button>
+                        <button class="btn btn-primary">Add to cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <span class="product-card__badge">Exclusive</span>
+                  <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80" alt="Creator laptop" />
+                  <div class="product-card__body">
+                    <h3>Steppe Creator Laptop 16"</h3>
+                    <p>OLED display, AI-cooled chassis, and nomad-ready rugged case designed with Mongolian artists.</p>
+                    <div class="product-card__meta">
+                      <span class="product-card__price">₮4,450,000</span>
+                      <div class="product-card__actions">
+                        <button class="icon-button" aria-label="Add Steppe Creator to wishlist">❤</button>
+                        <button class="btn btn-primary">Add to cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="product-card">
+                  <span class="product-card__badge">Eco</span>
+                  <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=900&q=80" alt="Smart thermostat" />
+                  <div class="product-card__body">
+                    <h3>Ger Smart Climate Hub</h3>
+                    <p>Monitor temperature and air quality across yurts and apartments with adaptive energy savings.</p>
+                    <div class="product-card__meta">
+                      <span class="product-card__price">₮799,000</span>
+                      <div class="product-card__actions">
+                        <button class="icon-button" aria-label="Add Ger Smart Climate Hub to wishlist">❤</button>
+                        <button class="btn btn-primary">Add to cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <button class="carousel-control carousel-control--next" aria-label="Scroll products" data-carousel-next>❯</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="value">
+          <div class="section__intro">
+            <span class="eyebrow">The Hunnu promise</span>
+            <h2>Service grounded in heritage, powered by innovation.</h2>
+            <p>
+              Every order combines the precision of the Cody commerce platform with Mongolian hospitality. We blend digital
+              convenience and cultural pride across the entire journey.
+            </p>
+          </div>
+          <div class="value-grid">
+            <article class="value-card">
+              <h3>Trusted warranties &amp; repairs</h3>
+              <p>Certified technicians, rapid replacements, and transparent pricing ensure trust from purchase to upgrade.</p>
             </article>
-            <article class="story-card">
-              <h3>Signals dashboard</h3>
-              <p>
-                Monitor dwell time, net-zero score, and conversion uplift in a single view designed for human + machine decision
-                making.
-              </p>
-              <a class="link-arrow" href="#">Tour the dashboard</a>
+            <article class="value-card">
+              <h3>Flexible payments</h3>
+              <p>Installments through major Mongolian banks, BNPL options, and loyalty credits that reward every purchase.</p>
             </article>
-            <article class="story-card">
-              <h3>Customer rituals</h3>
-              <p>
-                Follow a day-in-the-life series showing how our concierge anticipates needs before they become a shopping task.
-              </p>
-              <a class="link-arrow" href="#">Watch the series</a>
+            <article class="value-card">
+              <h3>Guided setup &amp; training</h3>
+              <p>Visit our experience lounge or book live video onboarding in Mongolian, English, or bilingual sessions.</p>
+            </article>
+            <article class="value-card">
+              <h3>Community powered insights</h3>
+              <p>Join workshops with local creators and engineers to learn, ask questions, and share your smart home wins.</p>
             </article>
           </div>
         </section>
 
-        <section class="timeline" id="about">
-          <div class="section-heading">
-            <p class="eyebrow">HITL launch path</p>
-            <h2>From first signal to loyal advocates.</h2>
+        <section class="section stories" id="stories">
+          <div class="section__intro">
+            <span class="eyebrow">Insights &amp; education</span>
+            <h2>Empowering Mongolians to choose technology with confidence.</h2>
+            <p>
+              Explore reviews, buying guides, and cultural spotlights. Each story blends product expertise with Mongolian values
+              of resilience and community.
+            </p>
           </div>
-          <ol class="timeline__list">
-            <li>
-              <div class="timeline__dot"></div>
-              <div class="timeline__content">
-                <h3>01. Sense</h3>
-                <p>Collect mood boards, voice notes, and purchase history to form a living brief.</p>
-              </div>
-            </li>
-            <li>
-              <div class="timeline__dot"></div>
-              <div class="timeline__content">
-                <h3>02. Curate</h3>
-                <p>AI drafts assortments. Humans layer context, ethics, and story.</p>
-              </div>
-            </li>
-            <li>
-              <div class="timeline__dot"></div>
-              <div class="timeline__content">
-                <h3>03. Loop</h3>
-                <p>Feedback loops close within hours, training models and mentoring experts simultaneously.</p>
-              </div>
-            </li>
-            <li>
-              <div class="timeline__dot"></div>
-              <div class="timeline__content">
-                <h3>04. Glow</h3>
-                <p>Turn one-off purchases into rituals with proactive concierge nudges.</p>
-              </div>
-            </li>
-          </ol>
+          <div class="story-grid">
+            <article class="story-card">
+              <h3>Steppe ready laptops guide</h3>
+              <p>Compare battery life, durability, and language support for laptops tuned to the Mongolian climate.</p>
+              <a href="#">Read the guide →</a>
+            </article>
+            <article class="story-card">
+              <h3>Mongolian smart home series</h3>
+              <p>Watch families modernize their gers with energy-efficient heating and voice assistants speaking Mongolian.</p>
+              <a href="#">Watch the series →</a>
+            </article>
+            <article class="story-card">
+              <h3>Hunnu loyalty decoded</h3>
+              <p>Learn how to earn bonus points, double upgrades, and exclusive festival bundles as a Hunnu Insider.</p>
+              <a href="#">See membership perks →</a>
+            </article>
+          </div>
         </section>
 
-        <section class="cta">
-          <div class="cta__panel">
-            <h2>Design a commerce ritual worth repeating.</h2>
-            <p>Join the next wave of founders building with HITL’s human-in-the-loop commerce stack.</p>
-            <form class="cta__form">
-              <label for="email" class="sr-only">Email address</label>
-              <input type="email" id="email" name="email" placeholder="you@studio.co" required />
-              <button type="submit" class="btn btn-primary">Request a strategy session</button>
+        <section class="section payment-options" id="loyalty">
+          <div class="section__intro">
+            <span class="eyebrow">Payments &amp; loyalty</span>
+            <h2>Access the tech you love with flexible, local options.</h2>
+            <p>Choose the plan that fits your goals—no compromises on quality or service.</p>
+          </div>
+          <div class="payment-grid">
+            <article class="payment-card">
+              <h3>Loyalty tiers</h3>
+              <ul class="icon-list">
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m10.5 2 2.6 5.2 5.7.8-4.1 4 1 5.7-5.2-2.7-5.2 2.7 1-5.7-4.1-4 5.7-.8z" />
+                  </svg>
+                  <span>Earn 1 point per ₮10,000 and unlock seasonal upgrades.</span>
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 11.5c0-3.6 3.4-6.5 8-6.5s8 2.9 8 6.5s-3.4 6.5-8 6.5S4 15.1 4 11.5zm11.5 0a3.5 3.5 0 1 0-7 0a3.5 3.5 0 0 0 7 0z" />
+                  </svg>
+                  <span>Insider members receive double warranty and festival drops.</span>
+                </li>
+              </ul>
+            </article>
+            <article class="payment-card">
+              <h3>Bank partnerships</h3>
+              <ul class="icon-list">
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 9L12 4l9 5v2h-2v7h-4v-5H9v5H5v-7H3z" />
+                  </svg>
+                  <span>0% installment plans with Khan, Trade &amp; Development, and XacBank.</span>
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 5h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v3h14V7H5zm0 5v5h14v-5H5z" />
+                  </svg>
+                  <span>BNPL programs and corporate invoicing available at checkout.</span>
+                </li>
+              </ul>
+            </article>
+            <article class="payment-card">
+              <h3>Support wherever you shop</h3>
+              <ul class="icon-list">
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 3a9 9 0 0 1 9 9v5a3 3 0 0 1-3 3h-3.2a1 1 0 1 1 0-2H18a1 1 0 0 0 1-1v-5a7 7 0 0 0-14 0v5a1 1 0 0 0 1 1h3.2a1 1 0 1 1 0 2H6a3 3 0 0 1-3-3v-5a9 9 0 0 1 9-9zm0 8a2 2 0 1 1 0 4a2 2 0 0 1 0-4z" />
+                  </svg>
+                  <span>24/7 hotline blending AI troubleshooting with human experts.</span>
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2l9 4v2l-3 1v10h-4v-6H10v6H6V9L3 8V6z" />
+                  </svg>
+                  <span>Experience lounges in Ulaanbaatar plus pop-ups in Darkhan &amp; Erdenet.</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section newsletter" aria-labelledby="newsletter-heading">
+          <div class="newsletter__inner">
+            <div>
+              <h2 id="newsletter-heading">Stay ahead with Hunnu Insider updates.</h2>
+              <p>
+                Receive launch alerts, cultural collaborations, and member-only bundles blending tech with Mongolian artistry.
+              </p>
+            </div>
+            <form class="newsletter__form" aria-label="Newsletter signup">
+              <label class="sr-only" for="newsletter-email">Email address</label>
+              <input id="newsletter-email" type="email" name="email" placeholder="you@example.mn" required />
+              <button type="submit">Join the community</button>
             </form>
-            <p class="cta__fineprint">We respond within 24 hours. No spam, just thoughtful collaboration.</p>
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
-        <div>
-          <div class="logo">HITL</div>
-          <p>Crafting retail that keeps humans at the center of every loop.</p>
+        <div class="site-footer__inner">
+          <div class="footer-brand">
+            <img src="assets/hunnu-logo.svg" alt="Hunnu Store" />
+            <p>
+              Innovation, accessibility, trust, and quality. Hunnu Store brings global technology home with Mongolian spirit and
+              Cody-powered reliability.
+            </p>
+            <div class="badge-grid">
+              <span>Trusted Service</span>
+              <span>Warranty Center</span>
+              <span>AI Assisted</span>
+            </div>
+          </div>
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#featured">Featured</a>
+            <a href="#stories">Stories</a>
+            <a href="#loyalty">Payments &amp; Loyalty</a>
+            <a href="#">About Us</a>
+          </nav>
+          <div class="footer-contact" id="store-locator">
+            <strong>Visit us</strong>
+            <span>Peace Avenue 15, Sukhbaatar District, Ulaanbaatar</span>
+            <a href="mailto:care@hunnustore.mn">care@hunnustore.mn</a>
+            <a href="tel:+97677112233">+976 77 11 22 33</a>
+          </div>
         </div>
-        <nav aria-label="Footer">
-          <a href="#home">Home</a>
-          <a href="#collections">Collections</a>
-          <a href="#assist">Assist</a>
-          <a href="#stories">Stories</a>
-          <a href="#about">About</a>
-        </nav>
-        <div class="site-footer__meta">
-          <p>© <span id="year"></span> HITL Commerce. All rights reserved.</p>
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
+        <div class="footer-bottom">
+          <span>© <span id="year"></span> Hunnu Store. All rights reserved.</span>
+          <div class="badge-grid">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Return Policy</a>
+          </div>
         </div>
       </footer>
     </div>

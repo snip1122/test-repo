@@ -1,8 +1,5 @@
 (function () {
   const header = document.querySelector('[data-scroll-header]');
-  const chipGroup = document.querySelector('[data-filter-group]');
-  const productGrid = document.querySelector('[data-product-grid]');
-  const assistSwitch = document.querySelector('#assist-switch');
   const yearEl = document.querySelector('#year');
 
   if (yearEl) {
@@ -10,58 +7,127 @@
   }
 
   if (header) {
-    const toggleScrolled = () => {
-      if (window.scrollY > 32) {
-        header.classList.add('is-scrolled');
-      } else {
-        header.classList.remove('is-scrolled');
+    const onScroll = () => {
+      header.classList.toggle('is-scrolled', window.scrollY > 24);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
+  const hero = document.querySelector('[data-hero]');
+  if (hero) {
+    const slidesContainer = hero.querySelector('.hero-carousel__slides');
+    const slides = Array.from(hero.querySelectorAll('.hero-slide'));
+    const dotsContainer = hero.querySelector('.hero-dots');
+    const prevBtn = hero.querySelector('[data-hero-prev]');
+    const nextBtn = hero.querySelector('[data-hero-next]');
+    let current = 0;
+    let autoTimer;
+
+    const renderDots = () => {
+      slides.forEach((_, index) => {
+        const button = document.createElement('button');
+        button.className = 'hero-dot';
+        button.type = 'button';
+        button.setAttribute('aria-label', `Go to slide ${index + 1}`);
+        button.addEventListener('click', () => {
+          goToSlide(index);
+        });
+        dotsContainer.appendChild(button);
+      });
+    };
+
+    const updateDots = () => {
+      const dots = Array.from(dotsContainer.children);
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('is-active', index === current);
+      });
+    };
+
+    const goToSlide = (index) => {
+      current = (index + slides.length) % slides.length;
+      slidesContainer.style.transform = `translateX(-${current * 100}%)`;
+      updateDots();
+      resetAuto();
+    };
+
+    const next = () => goToSlide(current + 1);
+    const prev = () => goToSlide(current - 1);
+
+    const resetAuto = () => {
+      if (autoTimer) {
+        window.clearInterval(autoTimer);
       }
+      autoTimer = window.setInterval(next, 7000);
     };
 
-    toggleScrolled();
-    window.addEventListener('scroll', toggleScrolled, { passive: true });
+    renderDots();
+    updateDots();
+    resetAuto();
+
+    if (nextBtn) nextBtn.addEventListener('click', next);
+    if (prevBtn) prevBtn.addEventListener('click', prev);
   }
 
-  if (chipGroup && productGrid) {
-    const chips = Array.from(chipGroup.querySelectorAll('.chip'));
-    const productCards = Array.from(productGrid.querySelectorAll('.product-card'));
+  const carousel = document.querySelector('[data-carousel]');
+  if (carousel) {
+    const track = carousel.querySelector('.product-track');
+    const cards = Array.from(track.children);
+    const prev = carousel.querySelector('[data-carousel-prev]');
+    const next = carousel.querySelector('[data-carousel-next]');
+    let position = 0;
+    const gap = 24;
 
-    const setActiveChip = (chip) => {
-      chips.forEach((c) => c.classList.toggle('is-active', c === chip));
+    const cardWidth = () => cards[0]?.getBoundingClientRect().width ?? 0;
+
+    const visibleCount = () => {
+      const step = cardWidth() + gap;
+      if (step === 0) return 1;
+      return Math.max(1, Math.round(carousel.getBoundingClientRect().width / step));
     };
 
-    chipGroup.addEventListener('click', (event) => {
-      const target = event.target.closest('.chip');
-      if (!target) return;
-      const filter = target.dataset.filter;
-      setActiveChip(target);
-      productCards.forEach((card) => {
-        const category = card.dataset.category ?? '';
-        const matches = filter === 'all' || category.includes(filter);
-        card.style.display = matches ? '' : 'none';
-      });
+    const maxPosition = () => {
+      const step = cardWidth() + gap;
+      const remaining = cards.length - visibleCount();
+      return step * Math.max(0, remaining);
+    };
+
+    const applyPosition = () => {
+      position = Math.min(Math.max(position, 0), maxPosition());
+      track.style.transform = `translateX(-${position}px)`;
+    };
+
+    const move = (direction) => {
+      const step = cardWidth() + gap;
+      if (step === 0) return;
+      position += direction * step;
+      applyPosition();
+    };
+
+    if (prev) {
+      prev.addEventListener('click', () => move(-1));
+    }
+
+    if (next) {
+      next.addEventListener('click', () => move(1));
+    }
+
+    window.addEventListener('resize', () => {
+      applyPosition();
     });
+
+    applyPosition();
   }
 
-  if (assistSwitch && productGrid) {
-    assistSwitch.addEventListener('change', (event) => {
-      const enabled = event.target.checked;
-      productGrid.classList.toggle('is-assist-disabled', !enabled);
-      productGrid.querySelectorAll('.product-card__tag').forEach((tag) => {
-        tag.style.opacity = enabled ? '1' : '0.35';
-      });
-    });
-  }
-
-  const ctaForm = document.querySelector('.cta__form');
-  if (ctaForm) {
-    ctaForm.addEventListener('submit', (event) => {
+  const newsletterForm = document.querySelector('.newsletter__form');
+  if (newsletterForm) {
+    newsletterForm.addEventListener('submit', (event) => {
       event.preventDefault();
-      const formData = new FormData(ctaForm);
-      const email = formData.get('email');
-      if (typeof email === 'string' && email.includes('@')) {
-        alert(`Thanks! We'll reach out to ${email} with next steps.`);
-        ctaForm.reset();
+      const formData = new FormData(newsletterForm);
+      const email = String(formData.get('email') ?? '').trim();
+      if (email.includes('@')) {
+        window.alert(`Баярлалаа! We will keep ${email} informed about new drops.`);
+        newsletterForm.reset();
       }
     });
   }

@@ -478,7 +478,7 @@
 
   const defaultLanguage = 'mn';
   const storageKey = 'hunnu-store-language';
-  const fallbackLanguage = defaultLanguage;
+  const fallbackLanguage = translations.en ? 'en' : defaultLanguage;
 
   const getNestedTranslation = (lang, key) => {
     const source = translations[lang];
@@ -521,7 +521,16 @@
       return formatValue(primary, params);
     }
     const fallback = getNestedTranslation(fallbackLanguage, key);
-    return formatValue(fallback, params);
+    if (fallback !== undefined) {
+      return formatValue(fallback, params);
+    }
+    if (fallbackLanguage !== defaultLanguage) {
+      const defaultValue = getNestedTranslation(defaultLanguage, key);
+      if (defaultValue !== undefined) {
+        return formatValue(defaultValue, params);
+      }
+    }
+    return undefined;
   };
 
   const applyText = (selector, datasetKey, apply) => {
@@ -700,6 +709,7 @@
     };
 
     renderDots();
+    applyLanguage();
     updateDots();
     resetAuto();
 

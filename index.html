@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HITL Commerce – Assisted Shopping for Humans + AI</title>
+    <meta
+      name="description"
+      content="Experience HITL Commerce – a human-in-the-loop marketplace that blends AI curation with expert stylists to deliver products you actually love."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="page">
+      <header class="site-header" data-scroll-header>
+        <div class="logo">HITL</div>
+        <nav aria-label="Primary navigation" class="site-nav">
+          <a href="#collections">Collections</a>
+          <a href="#assist">Assist</a>
+          <a href="#stories">Stories</a>
+          <a href="#about">About</a>
+        </nav>
+        <div class="header-actions">
+          <button class="btn btn-ghost">Log in</button>
+          <button class="btn btn-primary">Request beta access</button>
+        </div>
+      </header>
+
+      <main id="main">
+        <section class="hero" id="home">
+          <div class="hero__content">
+            <p class="eyebrow">Human in the loop commerce</p>
+            <h1>Retail therapy meets real humans, guided by adaptive AI.</h1>
+            <p class="lede">
+              HITL pairs neural recommendations with curated human edits so every cart feels intentional.
+              Discover pieces chosen for your taste, your ethics, and your lifestyle in minutes.
+            </p>
+            <div class="hero__actions">
+              <button class="btn btn-primary">Shop curated drops</button>
+              <button class="btn btn-secondary">See how it works</button>
+            </div>
+            <dl class="hero__metrics">
+              <div>
+                <dt>82%</dt>
+                <dd>of shoppers say our stylists made discovery effortless.</dd>
+              </div>
+              <div>
+                <dt>12m</dt>
+                <dd>data points interpreted with a human touch every day.</dd>
+              </div>
+              <div>
+                <dt>4.9★</dt>
+                <dd>average satisfaction across 40k verified beta sessions.</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="hero__visual" aria-hidden="true">
+            <div class="hero-card hero-card--primary">
+              <span class="hero-card__eyebrow">Live human assist</span>
+              <p class="hero-card__title">A stylist named Mira is co-editing your cart.</p>
+              <div class="hero-card__avatars">
+                <span class="avatar avatar--ai" title="AI agent"></span>
+                <span class="avatar avatar--human" title="Mira, stylist"></span>
+              </div>
+              <p class="hero-card__meta">Response in under 2 minutes.</p>
+            </div>
+            <div class="hero-card hero-card--secondary">
+              <p class="hero-card__title">Adaptive ethics filter</p>
+              <p class="hero-card__meta">Vegan, local, circular supply chain prioritized.</p>
+              <div class="pill-rail">
+                <span class="pill">Regenerative cotton</span>
+                <span class="pill">Fair trade</span>
+                <span class="pill">Zero plastic</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-experience" id="collections">
+          <div class="section-heading">
+            <p class="eyebrow">Curated for every intention</p>
+            <h2>Stay in flow with adaptive collections.</h2>
+            <p class="section-heading__desc">
+              Move between AI-curated suggestions and human edits with one tap. Filter by vibe, intent, or expert team.
+            </p>
+          </div>
+          <div class="product-toolbar" role="toolbar" aria-label="Filter catalog">
+            <div class="chip-group" data-filter-group>
+              <button class="chip is-active" data-filter="all">All</button>
+              <button class="chip" data-filter="new">New rituals</button>
+              <button class="chip" data-filter="ethics">Ethical core</button>
+              <button class="chip" data-filter="tech">HITL tech picks</button>
+              <button class="chip" data-filter="wellness">Wellness</button>
+            </div>
+            <div class="assist-toggle">
+              <label class="switch">
+                <input type="checkbox" id="assist-switch" checked />
+                <span class="slider" aria-hidden="true"></span>
+              </label>
+              <label for="assist-switch">Show human edits</label>
+            </div>
+          </div>
+
+          <div class="product-grid" data-product-grid>
+            <article class="product-card" data-category="new ethics">
+              <div class="product-card__media gradient gradient--sunrise"></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Curated by Mira</p>
+                <h3>Atmos linen wrap dress</h3>
+                <p class="product-card__desc">Made-to-order pieces sewn in Lisbon with remnant linen.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">$168</span>
+                  <button class="btn-icon" aria-label="Add Atmos linen wrap dress to bag">❤</button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="tech new">
+              <div class="product-card__media gradient gradient--violet"></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">AI suggested</p>
+                <h3>Neural-knit adaptive jacket</h3>
+                <p class="product-card__desc">Temperature-responsive fibers mapped to your routine.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">$248</span>
+                  <button class="btn-icon" aria-label="Add Neural-knit adaptive jacket to bag">❤</button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="ethics wellness">
+              <div class="product-card__media gradient gradient--emerald"></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Curated by Ravi</p>
+                <h3>Hearth cold brew ritual kit</h3>
+                <p class="product-card__desc">Small-batch adaptogenic blend with reusable glass brewing system.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">$64</span>
+                  <button class="btn-icon" aria-label="Add Hearth cold brew ritual kit to bag">❤</button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="tech">
+              <div class="product-card__media gradient gradient--slate"></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">AI suggested</p>
+                <h3>Continuum mixed reality frames</h3>
+                <p class="product-card__desc">Transition from meetings to streetwear with contextual overlays.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">$398</span>
+                  <button class="btn-icon" aria-label="Add Continuum mixed reality frames to bag">❤</button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="wellness ethics">
+              <div class="product-card__media gradient gradient--peach"></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Curated by Amaya</p>
+                <h3>Cloudhouse mindful mat</h3>
+                <p class="product-card__desc">Hand-loomed support with biometric posture cues from our AI.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">$112</span>
+                  <button class="btn-icon" aria-label="Add Cloudhouse mindful mat to bag">❤</button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="new">
+              <div class="product-card__media gradient gradient--aqua"></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">AI suggested</p>
+                <h3>Pulse 03 sneakers</h3>
+                <p class="product-card__desc">Self-healing knit and swap-in soles produced on-demand.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">$210</span>
+                  <button class="btn-icon" aria-label="Add Pulse 03 sneakers to bag">❤</button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="ethics">
+              <div class="product-card__media gradient gradient--amber"></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Curated by Kai</p>
+                <h3>Solaris daylight lamp</h3>
+                <p class="product-card__desc">Solar-powered wellness lamp with recycled glass diffuser.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">$186</span>
+                  <button class="btn-icon" aria-label="Add Solaris daylight lamp to bag">❤</button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="wellness tech">
+              <div class="product-card__media gradient gradient--berry"></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">AI + Mira</p>
+                <h3>Align sonic diffuser</h3>
+                <p class="product-card__desc">AI-personalized scent journeys with human-crafted rituals.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">$132</span>
+                  <button class="btn-icon" aria-label="Add Align sonic diffuser to bag">❤</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="assist" id="assist">
+          <div class="assist__content">
+            <div class="section-heading">
+              <p class="eyebrow">Always a human on the other side</p>
+              <h2>AI handles the heavy lift. Humans craft the story.</h2>
+            </div>
+            <ul class="assist__list">
+              <li>
+                <h3>Context-rich onboarding</h3>
+                <p>
+                  Start with a 90-second voice note or mood board upload. Our AI translates it into actionable briefs for stylists
+                  who refine the picks.
+                </p>
+              </li>
+              <li>
+                <h3>Ethics that stay honest</h3>
+                <p>
+                  Every recommendation is co-signed by vetted experts who uphold HITL standards for supply chain transparency,
+                  inclusivity, and long-term durability.
+                </p>
+              </li>
+              <li>
+                <h3>Adaptive concierge</h3>
+                <p>
+                  Your concierge tracks changes in schedule or climate, nudging AI models to refresh selections before you even
+                  realize you need them.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="assist__panel" role="presentation">
+            <div class="chat-card">
+              <div class="chat-card__header">
+                <div class="chat-card__status">
+                  <span class="status-dot"></span>
+                  <span>Live human assist</span>
+                </div>
+                <span class="chat-card__time">1m avg wait</span>
+              </div>
+              <div class="chat-card__thread">
+                <div class="chat-card__message chat-card__message--ai">
+                  <p>These jackets pair with your upcoming retreat climate and color palette.</p>
+                </div>
+                <div class="chat-card__message chat-card__message--human">
+                  <p>
+                    I swapped look 2 for a lighter layer from Atelier M. Ethically dyed, perfect with the Atmos wrap dress you
+                    loved.
+                  </p>
+                </div>
+                <div class="chat-card__message chat-card__message--user">
+                  <p>Perfect. Can we add matching accessories under $120?</p>
+                </div>
+              </div>
+              <form class="chat-card__composer">
+                <label for="chat-input" class="sr-only">Send a message</label>
+                <input id="chat-input" type="text" placeholder="Ask for tweaks, swaps, or new vibes..." />
+                <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="stories" id="stories">
+          <div class="section-heading">
+            <p class="eyebrow">Signals from the loop</p>
+            <h2>Insights your team can act on in real time.</h2>
+            <p class="section-heading__desc">
+              Align merchandising, CX, and supply teams with dashboards synthesizing both AI predictions and human annotations.
+            </p>
+          </div>
+          <div class="stories__grid">
+            <article class="story-card">
+              <h3>Stylist annotations</h3>
+              <p>
+                Discover how Mira, Kai, and other stylists tag emergent needs, letting AI shift recommendations from seasonal to
+                situational.
+              </p>
+              <a class="link-arrow" href="#">Read the playbook</a>
+            </article>
+            <article class="story-card">
+              <h3>Signals dashboard</h3>
+              <p>
+                Monitor dwell time, net-zero score, and conversion uplift in a single view designed for human + machine decision
+                making.
+              </p>
+              <a class="link-arrow" href="#">Tour the dashboard</a>
+            </article>
+            <article class="story-card">
+              <h3>Customer rituals</h3>
+              <p>
+                Follow a day-in-the-life series showing how our concierge anticipates needs before they become a shopping task.
+              </p>
+              <a class="link-arrow" href="#">Watch the series</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="timeline" id="about">
+          <div class="section-heading">
+            <p class="eyebrow">HITL launch path</p>
+            <h2>From first signal to loyal advocates.</h2>
+          </div>
+          <ol class="timeline__list">
+            <li>
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3>01. Sense</h3>
+                <p>Collect mood boards, voice notes, and purchase history to form a living brief.</p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3>02. Curate</h3>
+                <p>AI drafts assortments. Humans layer context, ethics, and story.</p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3>03. Loop</h3>
+                <p>Feedback loops close within hours, training models and mentoring experts simultaneously.</p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3>04. Glow</h3>
+                <p>Turn one-off purchases into rituals with proactive concierge nudges.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="cta">
+          <div class="cta__panel">
+            <h2>Design a commerce ritual worth repeating.</h2>
+            <p>Join the next wave of founders building with HITL’s human-in-the-loop commerce stack.</p>
+            <form class="cta__form">
+              <label for="email" class="sr-only">Email address</label>
+              <input type="email" id="email" name="email" placeholder="you@studio.co" required />
+              <button type="submit" class="btn btn-primary">Request a strategy session</button>
+            </form>
+            <p class="cta__fineprint">We respond within 24 hours. No spam, just thoughtful collaboration.</p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <div class="logo">HITL</div>
+          <p>Crafting retail that keeps humans at the center of every loop.</p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="#home">Home</a>
+          <a href="#collections">Collections</a>
+          <a href="#assist">Assist</a>
+          <a href="#stories">Stories</a>
+          <a href="#about">About</a>
+        </nav>
+        <div class="site-footer__meta">
+          <p>© <span id="year"></span> HITL Commerce. All rights reserved.</p>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
